@@ -1,8 +1,8 @@
 <template>
   <transition name="slide-down">
-    <div class="menu-modal">
-      <ul class="menu-modal__list">
-        <li>
+    <nav class="menu-modal" role="navigation" title="Mobile Navigation">
+      <ul class="menu-modal__list" role="menu">
+        <li role="menuitem">
           <router-link
             :to="{ name: 'home' }"
             class="menu-modal__router-link"
@@ -12,27 +12,27 @@
             <vue-feather type="home" class="menu-modal__router-link-icon"></vue-feather>
           </router-link>
         </li>
-        <li>
+        <li role="menuitem">
           <router-link :to="{ name: 'about' }" class="menu-modal__router-link" @click="close">
             About
           </router-link>
         </li>
-        <li>
+        <li role="menuitem">
           <router-link :to="{ name: 'experience' }" class="menu-modal__router-link" @click="close">
             Experience
           </router-link>
         </li>
-        <li>
+        <li role="menuitem">
           <router-link :to="{ name: 'contact' }" class="menu-modal__router-link" @click="close">
             Contact
           </router-link>
         </li>
       </ul>
 
-      <button @click="close" class="menu-modal__close-button">
+      <button @click="close" class="menu-modal__close-button" @keydown.enter="close">
         <vue-feather type="x-circle" class="menu-modal__router-link-icon"></vue-feather>
       </button>
-    </div>
+    </nav>
   </transition>
 </template>
 

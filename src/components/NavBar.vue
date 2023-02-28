@@ -1,21 +1,21 @@
 <template>
   <div>
-    <nav class="nav-bar">
-      <ul class="nav-bar__list" v-if="media.sm">
-        <li>
+    <nav class="nav-bar" role="navigation" title="Main Navigation">
+      <ul class="nav-bar__list" v-if="media.sm" role="menu">
+        <li role="menuitem">
           <router-link :to="{ name: 'home' }" class="nav-bar__router-link" aria-label="Home">
             <vue-feather type="home" class="nav-bar__router-link-icon"></vue-feather>
           </router-link>
         </li>
-        <li>
+        <li role="menuitem">
           <router-link :to="{ name: 'about' }" class="nav-bar__router-link">About</router-link>
         </li>
-        <li>
+        <li role="menuitem">
           <router-link :to="{ name: 'experience' }" class="nav-bar__router-link"
             >Experience</router-link
           >
         </li>
-        <li>
+        <li role="menuitem">
           <router-link :to="{ name: 'contact' }" class="nav-bar__router-link">Contact</router-link>
         </li>
       </ul>
