@@ -12,7 +12,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "feather-icons": "^4.29.0",
     "vue": "^3.2.47",
+    "vue-feather": "^2.0.0",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
