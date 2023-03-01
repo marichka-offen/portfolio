@@ -11,6 +11,10 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
+  "dependencies": {
+    "feather-icons": "^4.29.0",
+    "vue-feather": "^2.0.0"
+  },
   "peerDependencies": {
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
