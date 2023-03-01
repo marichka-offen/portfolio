@@ -15,7 +15,7 @@
   .content-block {
     @apply flex
         flex-col
-        gap-4;
+        gap-8;
   }
 
   .content-block__header {
