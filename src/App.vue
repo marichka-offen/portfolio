@@ -25,7 +25,8 @@
   .app_container {
     @apply h-full
     w-full
-    p-8;
+    py-8
+    px-40;
   }
 
   .slide-enter-from,
