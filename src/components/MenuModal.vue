@@ -28,9 +28,8 @@
           </router-link>
         </li>
       </ul>
-
       <button @click="close" class="menu-modal__close-button" @keydown.enter="close">
-        <vue-feather type="x-circle" class="menu-modal__router-link-icon"></vue-feather>
+        <vue-feather type="x-circle" class="menu-modal__close-button--icon"></vue-feather>
       </button>
     </nav>
   </transition>
@@ -52,12 +51,14 @@
     flex
     justify-center
     items-center
-    relative
-    z-50;
+    fixed
+    top-0
+    z-40
+    sm:hidden;
   }
 
   .menu-modal__list {
-    @apply z-50
+    @apply z-40
     text-2xl
     flex
     flex-col
@@ -89,10 +90,24 @@
   }
 
   .menu-modal__close-button {
-    @apply absolute
-    h-6
-    top-0
-    right-0;
+    @apply bg-zinc-400
+    bg-opacity-10
+    bg-blend-multiply
+    flex
+    rounded-full
+    shadow-md
+    p-2
+    fixed
+    bottom-8;
+  }
+
+  .menu-modal__close-button--icon {
+    @apply p-4
+    hover:bg-slate-700
+    hover:text-white
+    rounded-full
+    transition-all
+    duration-300;
   }
 
   .slide-down-enter {

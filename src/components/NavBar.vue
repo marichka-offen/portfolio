@@ -22,16 +22,18 @@
       <button class="nav-bar__menu-button" v-if="!media.sm && !modal" @click="modal = true">
         <vue-feather type="menu" class="nav-bar__mobile-menu"></vue-feather>
       </button>
-      <button
+      <!-- <button
         @click="modal = false"
         v-if="!media.sm && modal"
         class="nav-bar__close-button"
         @keydown.enter="modal = false"
       >
         <vue-feather type="x-circle" class="nav-bar__mobile-menu"></vue-feather>
-      </button>
+      </button> -->
     </nav>
-    <MenuModal v-if="modal" @close="modal = false" />
+    <Teleport to="body">
+      <MenuModal v-if="modal" @close="modal = false" />
+    </Teleport>
   </div>
 </template>
 
@@ -57,8 +59,7 @@
   }
 
   .nav-bar__list,
-  .nav-bar__menu-button,
-  .nav-bar__close-button {
+  .nav-bar__menu-button {
     @apply bg-zinc-400
     bg-opacity-10
     bg-blend-multiply

@@ -19,14 +19,17 @@
   .app {
     @apply h-screen
     w-screen
-    relative;
+    relative
+    mb-28
+    sm:mb-0;
   }
 
   .app_container {
     @apply h-full
     w-full
     py-8
-    px-40;
+    px-8
+    lg:px-40;
   }
 
   .slide-enter-from,
