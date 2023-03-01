@@ -1,11 +1,11 @@
 <template>
   <div class="image-wrapper">
-    <img :src="image" alt="random" class="image-wrapper__image" />
+    <img :src="image" :alt="altText" class="image-wrapper__image" />
   </div>
 </template>
 
 <script setup lang="ts">
-  import { ref, toRefs } from 'vue'
+  import { computed, ref, toRefs } from 'vue'
 
   const props = defineProps<{
     image: string
@@ -20,6 +20,10 @@
   const dimensions = ref(`${props.dimensions}px`)
   const { image, fit } = toRefs(props)
   const radiusSize = ref(props.radius ? '100%' : '0%')
+
+  const altText = computed(() => {
+    return `image of ${image.value?.split('/').pop()?.split('.').shift()}` || ''
+  })
 </script>
 
 <style>
@@ -31,7 +35,10 @@
     @apply relative
     p-8
     w-max
-    mb-1;
+    mb-1
+    flex-shrink-0
+    z-0
+    lg:self-start;
   }
   .image-wrapper::after {
     @apply rounded-full
