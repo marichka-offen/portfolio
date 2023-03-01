@@ -19,8 +19,16 @@
           <router-link :to="{ name: 'contact' }" class="nav-bar__router-link">Contact</router-link>
         </li>
       </ul>
-      <button class="nav-bar__menu-button" v-if="!media.sm" @click="modal = true">
+      <button class="nav-bar__menu-button" v-if="!media.sm && !modal" @click="modal = true">
         <vue-feather type="menu" class="nav-bar__mobile-menu"></vue-feather>
+      </button>
+      <button
+        @click="modal = false"
+        v-if="!media.sm && modal"
+        class="nav-bar__close-button"
+        @keydown.enter="modal = false"
+      >
+        <vue-feather type="x-circle" class="nav-bar__mobile-menu"></vue-feather>
       </button>
     </nav>
     <MenuModal v-if="modal" @close="modal = false" />
@@ -37,17 +45,20 @@
 
 <style>
   .nav-bar {
-    @apply absolute
+    @apply fixed
     w-max
     h-max
     bottom-8
     right-0
     left-0
-    mx-auto;
+    mx-auto
+    z-50
+    sm:z-30;
   }
 
   .nav-bar__list,
-  .nav-bar__menu-button {
+  .nav-bar__menu-button,
+  .nav-bar__close-button {
     @apply bg-zinc-400
     bg-opacity-10
     bg-blend-multiply
@@ -76,8 +87,12 @@
 
   .nav-bar__router-link {
     @apply flex
+    hover:bg-slate-300
+    hover:text-black
+    rounded-full
     py-2
-    px-4;
+    px-4
+    transition-all;
   }
 
   .nav-bar__mobile-menu {
@@ -87,5 +102,10 @@
     rounded-full
     transition-all
     duration-300;
+  }
+
+  .nav-bar__close-button {
+    @apply z-50
+    relative;
   }
 </style>
