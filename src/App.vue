@@ -27,15 +27,13 @@
   .app_container {
     @apply h-full
     w-full
-    py-8
-    px-8
+    px-16
     pb-32;
   }
 
   .slide-enter-from,
   .slide-leave-to {
     opacity: 0;
-    transform: translate(-100%);
   }
 
   .slide-enter-active,
