@@ -19,8 +19,13 @@
   }
 
   .content-block__header {
-    @apply text-2xl
+    @apply text-4xl
     border-b-2
     border-zinc-500;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+
+  .content-block__content {
+    font-family: Helvetica Neue, Arial, sans-serif;
   }
 </style>
