@@ -19,12 +19,17 @@
             ever-evolving world of technology. If you have something to teach me, I'm all ears!
           </div>
 
-          <ImageWrapper2
-            :image="me"
-            :gradient-colors="['#d6d0be', '#13181b']"
-            dimensions="360"
-            fit="cover"
-            radius
+          <img :src="me" width="200" height="200" class="about-page__bio-image" />
+        </div>
+
+        <div class="about-page__links">
+          <ExternalLink
+            link="https://docs.google.com/document/d/1T_DrCQ7RGrIx-BiOEjts1FdxFxDqu9Aa/edit?usp=sharing&ouid=104315682638605713996&rtpof=true&sd=true"
+            text="Resume"
+          />
+          <ExternalLink
+            link="https://www.linkedin.com/in/marichka-offen/details/recommendations/"
+            text="Testimonials"
           />
         </div>
       </template>
@@ -41,7 +46,7 @@
 <script setup lang="ts">
   import ContentBlock from '@/components/ContentBlock.vue'
   import me from '@/assets/me.jpg'
-  import ImageWrapper2 from '@/components/ImageWrapper2.vue'
+  import ExternalLink from '@/components/ExternalLink.vue'
   import SkillsGallery from '@/components/SkillsGallery.vue'
 </script>
 
@@ -63,5 +68,10 @@
 
   .about-page__bio-text {
 
+  }
+
+  .about-page__links {
+    @apply flex
+    gap-4;
   }
 </style>
