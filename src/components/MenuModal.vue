@@ -18,8 +18,8 @@
           </router-link>
         </li>
         <li role="menuitem">
-          <router-link :to="{ name: 'experience' }" class="menu-modal__router-link" @click="close">
-            Experience
+          <router-link :to="{ name: 'projects' }" class="menu-modal__router-link" @click="close">
+            Projects
           </router-link>
         </li>
         <li role="menuitem">

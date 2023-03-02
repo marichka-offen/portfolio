@@ -1,8 +1,8 @@
 <template>
   <ContentBlock>
-    <template #header> Skills </template>
+    <template #header> Projects </template>
     <template #default>
-      <SkillsGallery />
+      <!--  -->
     </template>
   </ContentBlock>
 </template>

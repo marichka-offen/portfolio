@@ -11,8 +11,8 @@
           <router-link :to="{ name: 'about' }" class="nav-bar__router-link">About</router-link>
         </li>
         <li role="menuitem">
-          <router-link :to="{ name: 'experience' }" class="nav-bar__router-link"
-            >Experience</router-link
+          <router-link :to="{ name: 'projects' }" class="nav-bar__router-link"
+            >Projects</router-link
           >
         </li>
         <li role="menuitem">
