@@ -19,7 +19,7 @@
             ever-evolving world of technology. If you have something to teach me, I'm all ears!
           </div>
 
-          <img :src="me" width="200" height="200" class="about-page__bio-image" />
+          <img :src="me" width="400" height="400" class="about-page__bio-image" />
         </div>
 
         <div class="about-page__links">
@@ -40,14 +40,26 @@
         <SkillsGallery />
       </template>
     </ContentBlock>
+    <ContentBlock>
+      <template #header> Growing Skills </template>
+      <template #default>
+        These are the skills I'm currently focused on mastering, and I'm continually seeking out
+        recommended courses to help me do so. Feel free to browse the links to these courses, as I
+        highly recommend them to anyone seeking to improve in these areas.
+        <br />
+        Figma, Python, Adobe Illustrator, Three.js, Unity
+        <GrowingSkillsGallery />
+      </template>
+    </ContentBlock>
   </div>
 </template>
 
 <script setup lang="ts">
   import ContentBlock from '@/components/ContentBlock.vue'
-  import me from '@/assets/me.jpg'
+  import me from '@/assets/me.svg'
   import ExternalLink from '@/components/ExternalLink.vue'
   import SkillsGallery from '@/components/SkillsGallery.vue'
+  import GrowingSkillsGallery from '@/components/GrowingSkillsGallery.vue'
 </script>
 
 <style>
