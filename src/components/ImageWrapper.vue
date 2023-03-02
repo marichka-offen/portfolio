@@ -31,7 +31,8 @@
     rounded-xl
     flex
     items-center
-    justify-center;
+    justify-center
+    dark:bg-[#586F7C];
     background-color: v-bind(backgroundColor);
   }
 

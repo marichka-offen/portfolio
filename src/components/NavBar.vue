@@ -67,7 +67,8 @@
     transition-all
     p-2
     sm:py-4
-    sm:px-8;
+    sm:px-8
+    dark:bg-opacity-60;
   }
 
   .nav-bar__router-link.nav-bar__link--active {

@@ -21,7 +21,10 @@
   .app {
     @apply h-full
     w-full
-    relative;
+    relative
+    dark:bg-[#1A1F2B]
+    text-slate-900
+    dark:text-white;
   }
 
   .app_container {

@@ -46,8 +46,8 @@
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="nodejs" color="#539E43" />
-      <p class="text-[#333]">Node</p>
+      <ImageWrapper :image="nodejs" color="#6CC04A" />
+      <p class="text-[#6CC04A]">Node</p>
     </div>
 
     <div class="skills-gallery__skill">

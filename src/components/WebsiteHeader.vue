@@ -14,9 +14,17 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue'
+  import { ref, watch } from 'vue'
 
   const isDarkMode = ref(false)
+
+  watch(isDarkMode, (newVal) => {
+    if (newVal) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  })
 </script>
 
 <style>
@@ -30,7 +38,6 @@
 
   .website-header__title {
     @apply text-6xl
-    text-slate-900
     relative;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     line-height: 0.6;
