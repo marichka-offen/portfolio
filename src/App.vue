@@ -19,17 +19,16 @@
 
 <style>
   .app {
-    @apply h-full
-    w-full
+    @apply w-full
     relative
     dark:bg-[#1A1F2B]
     text-slate-900
     dark:text-white;
+    min-height: 100vh;
   }
 
   .app_container {
-    @apply h-full
-    w-full
+    @apply w-full
     px-16
     pb-32;
   }
