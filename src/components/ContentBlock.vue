@@ -26,6 +26,9 @@
   }
 
   .content-block__content {
+    @apply flex
+    flex-col
+    gap-8;
     font-family: Helvetica Neue, Arial, sans-serif;
   }
 </style>
