@@ -59,6 +59,26 @@
       <ImageWrapper :image="git" color="#DE4C36" />
       <p class="text-[#DE4C36]">Git</p>
     </div>
+
+    <div class="skills-gallery__skill">
+      <ImageWrapper :image="accessibility" color="#154F92" />
+      <p class="text-[#154F92]">A11y</p>
+    </div>
+
+    <div class="skills-gallery__skill">
+      <ImageWrapper :image="csharp" color="#9B4F96" />
+      <p class="text-[#9B4F96]">C#</p>
+    </div>
+
+    <div class="skills-gallery__skill">
+      <ImageWrapper :image="dotnet" color="#00AEEF" />
+      <p class="text-[#00AEEF]">.Net</p>
+    </div>
+
+    <div class="skills-gallery__skill">
+      <ImageWrapper :image="mysql" color="#DE8A03" />
+      <p class="text-[#DE8A03]">MySQL</p>
+    </div>
   </div>
 </template>
 
@@ -76,6 +96,10 @@
   import git from '@/assets/icons/git.svg'
   import nuxt from '@/assets/icons/nuxt.svg'
   import tailwind from '@/assets/icons/tailwind.svg'
+  import accessibility from '@/assets/icons/accessibility.svg'
+  import dotnet from '@/assets/icons/dotnet.svg'
+  import csharp from '@/assets/icons/csharp.svg'
+  import mysql from '@/assets/icons/mysql.svg'
 </script>
 
 <style>

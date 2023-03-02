@@ -37,6 +37,8 @@
     <ContentBlock>
       <template #header> Skills </template>
       <template #default>
+        These are the skills that I have acquired through practical experience gained in
+        professional settings, as well as through self-directed study driven by personal interest.
         <SkillsGallery />
       </template>
     </ContentBlock>
@@ -46,8 +48,7 @@
         These are the skills I'm currently focused on mastering, and I'm continually seeking out
         recommended courses to help me do so. Feel free to browse the links to these courses, as I
         highly recommend them to anyone seeking to improve in these areas.
-        <br />
-        Figma, Python, Adobe Illustrator, Three.js, Unity
+
         <GrowingSkillsGallery />
       </template>
     </ContentBlock>
