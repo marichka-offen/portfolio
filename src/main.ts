@@ -4,8 +4,6 @@ import router from './router'
 import VueFeather from 'vue-feather'
 import './style.css'
 
-// import './assets/main.css'
-
 const app = createApp(App)
 
 app.use(router)

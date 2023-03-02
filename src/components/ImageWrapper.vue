@@ -9,17 +9,11 @@
 
   const props = defineProps<{
     image: string
-    gradientColors: string[]
-    dimensions: string
-    fit: string
-    radius?: boolean
+    color: string
   }>()
 
-  const lighterColor = ref(props.gradientColors[0])
-  const darkerColor = ref(props.gradientColors[1])
-  const dimensions = ref(`${props.dimensions}px`)
-  const { image, fit } = toRefs(props)
-  const radiusSize = ref(props.radius ? '100%' : '0%')
+  const backgroundColor = ref(`${props.color}4d`)
+  const image = ref(props.image)
 
   const altText = computed(() => {
     return `image of ${image.value?.split('/').pop()?.split('.').shift()}` || ''
@@ -32,47 +26,17 @@
     --image-wrapper-distance: 50%;
   }
   .image-wrapper {
-    @apply relative
-    p-8
-    w-max
-    mb-1
-    flex-shrink-0
-    z-0
-    lg:self-start;
-  }
-  .image-wrapper::after {
-    @apply rounded-full
-    block
-    absolute
-    top-0
-    left-0
-    h-full
-    w-full
-    opacity-80;
-    content: '';
-    background: conic-gradient(
-      from 30deg,
-      v-bind(lighterColor),
-      v-bind(darkerColor) var(--image-wrapper-distance),
-      transparent var(--image-wrapper-distance)
-    );
-    -webkit-mask: radial-gradient(
-      farthest-side,
-      transparent calc(100% - var(--image-wrapper-border)),
-      #fff calc(100% - var(--image-wrapper-border) + 1px)
-    );
-    mask: radial-gradient(
-      farthest-side,
-      transparent calc(100% - var(--image-wrapper-border)),
-      #fff calc(100% - var(--image-wrapper-border) + 1px)
-    );
+    @apply h-16
+    w-16
+    rounded-xl
+    flex
+    items-center
+    justify-center;
+    background-color: v-bind(backgroundColor);
   }
 
   .image-wrapper__image {
-    @apply block;
-    object-fit: v-bind(fit);
-    width: v-bind(dimensions);
-    height: v-bind(dimensions);
-    border-radius: v-bind(radiusSize);
+    @apply p-4 
+    object-contain;
   }
 </style>

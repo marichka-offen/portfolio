@@ -22,14 +22,6 @@
       <button class="nav-bar__menu-button" v-if="!media.sm && !modal" @click="modal = true">
         <vue-feather type="menu" class="nav-bar__mobile-menu"></vue-feather>
       </button>
-      <!-- <button
-        @click="modal = false"
-        v-if="!media.sm && modal"
-        class="nav-bar__close-button"
-        @keydown.enter="modal = false"
-      >
-        <vue-feather type="x-circle" class="nav-bar__mobile-menu"></vue-feather>
-      </button> -->
     </nav>
     <Teleport to="body">
       <MenuModal v-if="modal" @close="modal = false" />

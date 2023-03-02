@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+    <WebsiteHeader />
     <NavBar class="app__nav-bar" />
     <div class="app_container">
       <router-view v-slot="{ Component }">
@@ -13,15 +14,14 @@
 
 <script setup lang="ts">
   import NavBar from '@/components/NavBar.vue'
+  import WebsiteHeader from './components/WebsiteHeader.vue'
 </script>
 
 <style>
   .app {
-    @apply h-screen
-    w-screen
-    relative
-    mb-28
-    sm:mb-0;
+    @apply h-full
+    w-full
+    relative;
   }
 
   .app_container {
@@ -29,7 +29,7 @@
     w-full
     py-8
     px-8
-    lg:px-40;
+    pb-32;
   }
 
   .slide-enter-from,
