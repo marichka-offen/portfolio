@@ -15,15 +15,15 @@
   .content-block {
     @apply flex
     flex-wrap
-        flex-col
-        gap-8;
+    flex-col
+    gap-8;
   }
 
   .content-block__header {
     @apply text-4xl
     border-b-2
     border-zinc-500;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Nothing You Could Do', cursive;
   }
 
   .content-block__content {
@@ -31,6 +31,5 @@
     flex-wrap
     flex-col
     gap-8;
-    font-family: Helvetica Neue, Arial, sans-serif;
   }
 </style>

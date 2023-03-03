@@ -11,7 +11,7 @@
 
       <!-- Prefect Cloud/Server -->
       <ProjectBlock>
-        <template #header> Prefect Cloud/Server </template>
+        <template #header> Prefect Cloud | Server </template>
         <template #content>
           <p>
             During my time at Prefect, I worked on the development of Prefect Cloud and Prefect
@@ -71,7 +71,7 @@
 
       <!-- Prefect Design -->
       <ProjectBlock>
-        <template #header> Prefect Design / Prefect UI Library / Vue Charts </template>
+        <template #header> Prefect Design | Prefect UI Library | Vue Charts </template>
         <template #content>
           <p>
             As part of my work at Prefect, I contributed to the development of several component
@@ -138,7 +138,7 @@
 
       <!-- Carahsoft -->
       <ProjectBlock>
-        <template #header> Carahsell / Carahsoft website </template>
+        <template #header> Carahsell | Carahsoft website </template>
         <template #content>
           <p>
             During my time at Carahsoft, I had the opportunity to work on two major projects:
@@ -286,7 +286,7 @@
 
       <!-- Natours -->
       <ProjectBlock>
-        <template #header> Natours / Trillo / Nexter</template>
+        <template #header> Natours | Trillo | Nexter</template>
         <template #content>
           <p>
             Natours, Trillo, and Nexter are three web development projects that I completed during
@@ -312,6 +312,26 @@
         <template #tools>
           <img src="@/assets/icons/html.svg" width="35" />
           <img src="@/assets/icons/sass.svg" width="35" />
+        </template>
+        <template #links>
+          <ExternalLink
+            link="http://natours-learning-experience.surge.sh/"
+            text="Natours Website"
+          />
+          <ExternalLink link="http://trillo-learning-experience.surge.sh/" text="Trillo Website" />
+          <ExternalLink link="http://nexter-learning-experience.surge.sh/" text="Nexter Website" />
+          <ExternalLink
+            link="https://github.com/marichka-offen/CSS-project-1"
+            text="Natours GitHub"
+          />
+          <ExternalLink
+            link="https://github.com/marichka-offen/CSS-project-2"
+            text="Trillo GitHub"
+          />
+          <ExternalLink
+            link="https://github.com/marichka-offen/CSS-project-3"
+            text="Nexter GitHub"
+          />
         </template>
       </ProjectBlock>
     </template>

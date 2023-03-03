@@ -27,7 +27,7 @@
     @apply text-2xl
     border-b-2
     border-zinc-500;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Nothing You Could Do', cursive;
   }
 
   .project-block__tools {

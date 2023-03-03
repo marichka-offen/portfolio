@@ -1,6 +1,6 @@
 <template>
   <div class="website-header">
-    <div class="website-header__title">Marichka</div>
+    <div class="website-header__title">M.</div>
 
     <div>
       <button v-if="!isDarkMode">
@@ -28,6 +28,8 @@
 </script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
   .website-header {
     @apply w-full
     flex
@@ -39,7 +41,7 @@
   .website-header__title {
     @apply text-6xl
     relative;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Nothing You Could Do', cursive;
     line-height: 0.6;
   }
 </style>

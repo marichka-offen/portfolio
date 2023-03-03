@@ -24,15 +24,17 @@
     flex
     flex-col
     items-center
+    leading-relaxed
     dark:bg-[#1A1F2B]
     text-slate-900
     dark:text-white;
     min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
   }
 
   .app_container {
     @apply max-w-5xl
-    px-16
+    px-8
     pb-32;
   }
 
