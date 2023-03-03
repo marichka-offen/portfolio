@@ -21,13 +21,6 @@
           continuous education is essential for staying ahead of the curve in the ever-evolving
           world of technology. If you have something to teach me, I'm all ears!
         </p>
-
-        <p>
-          Please check out my skill list below,take a look at my resume for a more detailed
-          breakdown of my work experience, education and abilities, or proceed to the Work page to
-          see what I've created so far. Thank you for stopping by my site, and feel free to reach
-          out to me if you have any questions!
-        </p>
       </div>
     </div>
 
