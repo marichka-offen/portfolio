@@ -24,9 +24,9 @@
 
         <p>
           Please check out my skill list below,take a look at my resume for a more detailed
-          breakdown of my experience and abilities, or proceed to the Work page to see what I've
-          created so far. Thank you for stopping by my site, and feel free to reach out to me if you
-          have any questions!
+          breakdown of my work experience, education and abilities, or proceed to the Work page to
+          see what I've created so far. Thank you for stopping by my site, and feel free to reach
+          out to me if you have any questions!
         </p>
       </div>
     </div>
