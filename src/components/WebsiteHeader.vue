@@ -33,7 +33,7 @@
     flex
     justify-between
     items-center
-    p-8;
+    py-10;
   }
 
   .website-header__title {

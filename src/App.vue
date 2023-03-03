@@ -1,8 +1,8 @@
 <template>
   <div class="app">
-    <WebsiteHeader />
-    <NavBar class="app__nav-bar" />
     <div class="app_container">
+      <WebsiteHeader />
+      <NavBar class="app__nav-bar" />
       <router-view v-slot="{ Component }">
         <Transition name="slide" mode="out-in">
           <component :is="Component" />
@@ -21,6 +21,9 @@
   .app {
     @apply w-full
     relative
+    flex
+    flex-col
+    items-center
     dark:bg-[#1A1F2B]
     text-slate-900
     dark:text-white;
@@ -28,7 +31,7 @@
   }
 
   .app_container {
-    @apply w-full
+    @apply max-w-5xl
     px-16
     pb-32;
   }

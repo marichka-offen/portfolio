@@ -49,7 +49,8 @@
     fixed
     top-0
     z-40
-    sm:hidden;
+    sm:hidden
+    dark:bg-[#1A1F2B];
   }
 
   .menu-modal__list {
@@ -58,7 +59,8 @@
     flex
     flex-col
     gap-6
-    items-center;
+    items-center
+    dark:bg-opacity-60;
   }
 
   .menu-modal__router-link {
@@ -66,7 +68,8 @@
     px-4
     rounded-full
     transition-all
-    duration-300;
+    duration-300
+    dark:text-white;
   }
 
   .menu-modal__router-link.nav-bar__link--active {
@@ -93,7 +96,8 @@
     shadow-md
     p-2
     fixed
-    bottom-8;
+    bottom-8
+    dark:bg-zinc-300;
   }
 
   .menu-modal__close-button--icon {
