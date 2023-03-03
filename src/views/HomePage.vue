@@ -89,6 +89,7 @@
 
   .home-page__bio-text {
     @apply flex
+    flex-wrap
     flex-col
     gap-4
     order-2
@@ -104,6 +105,7 @@
 
   .home-page__links {
     @apply flex
+    flex-wrap
     gap-4;
   }
 </style>

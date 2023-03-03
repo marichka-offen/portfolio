@@ -18,8 +18,9 @@
 <style>
   .project-block {
     @apply flex
-        flex-col
-        gap-4;
+    flex-wrap
+    flex-col
+    gap-4;
   }
 
   .project-block__header {
@@ -31,11 +32,13 @@
 
   .project-block__tools {
     @apply flex
+    flex-wrap
     gap-4;
   }
 
   .project-block__links {
     @apply flex
+    flex-wrap
     gap-4;
   }
 </style>
