@@ -8,12 +8,7 @@
           </router-link>
         </li>
         <li role="menuitem">
-          <router-link :to="{ name: 'about' }" class="nav-bar__router-link">About</router-link>
-        </li>
-        <li role="menuitem">
-          <router-link :to="{ name: 'projects' }" class="nav-bar__router-link"
-            >Projects</router-link
-          >
+          <router-link :to="{ name: 'work' }" class="nav-bar__router-link">Work</router-link>
         </li>
         <li role="menuitem">
           <router-link :to="{ name: 'contact' }" class="nav-bar__router-link">Contact</router-link>

@@ -13,13 +13,8 @@
           </router-link>
         </li>
         <li role="menuitem">
-          <router-link :to="{ name: 'about' }" class="menu-modal__router-link" @click="close">
-            About
-          </router-link>
-        </li>
-        <li role="menuitem">
-          <router-link :to="{ name: 'projects' }" class="menu-modal__router-link" @click="close">
-            Projects
+          <router-link :to="{ name: 'work' }" class="menu-modal__router-link" @click="close">
+            Work
           </router-link>
         </li>
         <li role="menuitem">
