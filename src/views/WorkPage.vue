@@ -14,10 +14,39 @@
         <template #header> Prefect Cloud/Server </template>
         <template #content>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, nisl eget
-            aliquam tincidunt, nisl nisl aliquam tortor, vitae aliquam nisl nisl eget nisl. Sed
-            tincidunt, nisl eget aliquam tincidunt, nisl nisl aliquam tortor, vitae aliquam nisl
-            nisl eget nisl.
+            During my time at Prefect, I worked on the development of Prefect Cloud and Prefect
+            Server, two applications aimed at making data flow control more efficient and
+            user-friendly for our clients. For certain projects, I was the sole UI Lead Engineer and
+            responsible for leading the development of several pages and features for both
+            applications.
+          </p>
+          <br />
+          <p>
+            One of the main goals of the project was to make the applications useful and pleasant to
+            use for a wider range of users, including non-technical folks like project managers,
+            finance, and marketing personnel. To achieve this goal, I worked on building and
+            enhancing several UI dashboards, including the notifications, work pool, and work queue
+            pages, from scratch.
+          </p>
+          <br />
+          <p>
+            In addition to these pages, I also worked on the development of various components that
+            improved other parts of the applications. For example, I built the main scatterplot
+            using D3 for visualizing data flow. Another significant feature I worked on was audit
+            logs, a paid feature used to track workspace user activity for Prefect Cloud.
+          </p>
+          <br />
+          <p>
+            To build these applications, I utilized various tools and technologies, including Vue,
+            TypeScript, Tailwind, and asynchronous programming techniques. I also worked with API to
+            integrate the application with other services.
+          </p>
+          <br />
+          <p>
+            Throughout the development process, I aimed to make the applications efficient and
+            visually appealing. The final products were both functional and aesthetically pleasing,
+            delivering on the project's goal of making data flow control more efficient and
+            user-friendly for our clients.
           </p>
         </template>
         <template #tools>
@@ -45,10 +74,38 @@
         <template #header> Prefect Design / Prefect UI Library / Vue Charts </template>
         <template #content>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, nisl eget
-            aliquam tincidunt, nisl nisl aliquam tortor, vitae aliquam nisl nisl eget nisl. Sed
-            tincidunt, nisl eget aliquam tincidunt, nisl nisl aliquam tortor, vitae aliquam nisl
-            nisl eget nisl.
+            As part of my work at Prefect, I contributed to the development of several component
+            libraries that were used in Prefect Cloud and Prefect Server. These included Prefect
+            Design, Prefect UI Library, and Vue Charts.
+          </p>
+          <br />
+          <p>
+            Prefect Design is an open source component library based on the Tailwind CSS framework.
+            It contains a wide range of different components, including buttons, tables, forms, and
+            more. This library was built to be highly flexible and customizable, making it suitable
+            for a variety of different use cases.
+          </p>
+          <br />
+          <p>
+            Prefect UI Library, on the other hand, is a component library that was specifically
+            designed for use in Prefect products. It contains key components that are critical to
+            the functionality of the products, as well as more complex and technical components that
+            are unique to Prefect. This library was built with Vue and TypeScript, and is based on
+            Prefect Design.
+          </p>
+          <br />
+          <p>
+            Finally, Vue Charts is a charting package that was developed using the D3 and Vue
+            frameworks. While this package can be used independently, it was specifically designed
+            to meet the needs of Prefect products. The charts are highly customizable and can be
+            easily integrated into other Vue-based applications.
+          </p>
+          <br />
+          <p>
+            Overall, these component libraries were built with love and attention to detail, using a
+            combination of Vue, TypeScript, and Tailwind. They played a critical role in making
+            Prefect Cloud and Prefect Server both functional and aesthetically pleasing, and helped
+            to ensure that the user experience was both efficient and user-friendly.
           </p></template
         >
         <template #tools>
