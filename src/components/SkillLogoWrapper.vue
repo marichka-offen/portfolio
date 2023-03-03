@@ -1,6 +1,6 @@
 <template>
-  <div class="image-wrapper">
-    <img :src="image" :alt="altText" class="image-wrapper__image" />
+  <div class="skill-logo-wrapper">
+    <img :src="image" :alt="altText" class="skill-logo-wrapper__image" />
   </div>
 </template>
 
@@ -22,10 +22,10 @@
 
 <style>
   :root {
-    --image-wrapper-border: 3px;
-    --image-wrapper-distance: 50%;
+    --skill-logo-wrapper-border: 3px;
+    --skill-logo-wrapper-distance: 50%;
   }
-  .image-wrapper {
+  .skill-logo-wrapper {
     @apply h-16
     w-16
     rounded-xl
@@ -36,7 +36,7 @@
     background-color: v-bind(backgroundColor);
   }
 
-  .image-wrapper__image {
+  .skill-logo-wrapper__image {
     @apply p-4 
     object-contain;
   }

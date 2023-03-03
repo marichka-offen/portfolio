@@ -1,89 +1,89 @@
 <template>
   <div class="skills-gallery">
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="html" color="#ef652a" />
+      <SkillLogoWrapper :image="html" color="#ef652a" />
       <p class="text-[#e34f26]">HTML</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="css" color="#33A9DC" />
+      <SkillLogoWrapper :image="css" color="#33A9DC" />
       <p class="text-[#1572B6]">CSS</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="sass" color="#CB6699" />
+      <SkillLogoWrapper :image="sass" color="#CB6699" />
       <p class="text-[#CB6699]">SASS</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="tailwind" color="#07B6D5" />
+      <SkillLogoWrapper :image="tailwind" color="#07B6D5" />
       <p class="text-[#07B6D5]">Tailwind</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="javascript" color="#F7DF1E" />
+      <SkillLogoWrapper :image="javascript" color="#F7DF1E" />
       <p class="text-[#F7DF1E]">JavaScript</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="typescript" color="#007acc" />
+      <SkillLogoWrapper :image="typescript" color="#007acc" />
       <p class="text-[#007acc]">TypeScript</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="vuejs" color="#41b883" />
+      <SkillLogoWrapper :image="vuejs" color="#41b883" />
       <p class="text-[#41b883]">Vue</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="nuxt" color="#3B8070" />
+      <SkillLogoWrapper :image="nuxt" color="#3B8070" />
       <p class="text-[#3B8070]">Nuxt</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="react" color="#61DAFB" />
+      <SkillLogoWrapper :image="react" color="#61DAFB" />
       <p class="text-[#61DAFB]">React</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="nodejs" color="#6CC04A" />
+      <SkillLogoWrapper :image="nodejs" color="#6CC04A" />
       <p class="text-[#6CC04A]">Node</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="d3" color="#F9A03C" />
+      <SkillLogoWrapper :image="d3" color="#F9A03C" />
       <p class="text-[#B84E51]">D3</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="git" color="#DE4C36" />
+      <SkillLogoWrapper :image="git" color="#DE4C36" />
       <p class="text-[#DE4C36]">Git</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="accessibility" color="#154F92" />
+      <SkillLogoWrapper :image="accessibility" color="#154F92" />
       <p class="text-[#154F92]">A11y</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="csharp" color="#9B4F96" />
+      <SkillLogoWrapper :image="csharp" color="#9B4F96" />
       <p class="text-[#9B4F96]">C#</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="dotnet" color="#00AEEF" />
+      <SkillLogoWrapper :image="dotnet" color="#00AEEF" />
       <p class="text-[#00AEEF]">.Net</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <ImageWrapper :image="mysql" color="#DE8A03" />
+      <SkillLogoWrapper :image="mysql" color="#DE8A03" />
       <p class="text-[#DE8A03]">MySQL</p>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-  import ImageWrapper from '@/components/ImageWrapper.vue'
+  import SkillLogoWrapper from '@/components/SkillLogoWrapper.vue'
   import css from '@/assets/icons/css.svg'
   import d3 from '@/assets/icons/d3.svg'
   import html from '@/assets/icons/html.svg'
