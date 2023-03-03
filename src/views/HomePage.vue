@@ -60,6 +60,12 @@
         <GrowingSkillsGallery />
       </template>
     </ContentBlock>
+    <ContentBlock>
+      <template #header> Languages </template>
+      <template #default>
+        <LanguageSkillsGallery />
+      </template>
+    </ContentBlock>
   </div>
 </template>
 
@@ -69,6 +75,7 @@
   import ExternalLink from '@/components/ExternalLink.vue'
   import SkillsGallery from '@/components/SkillsGallery.vue'
   import GrowingSkillsGallery from '@/components/GrowingSkillsGallery.vue'
+  import LanguageSkillsGallery from '@/components/LanguageSkillsGallery.vue'
 </script>
 
 <style>

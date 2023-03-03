@@ -50,14 +50,14 @@
           </p>
         </template>
         <template #tools>
-          <img src="@/assets/icons/html.svg" width="35" />
-          <img src="@/assets/icons/css.svg" width="35" />
-          <img src="@/assets/icons/sass.svg" width="35" />
-          <img src="@/assets/icons/tailwind.svg" width="35" />
-          <img src="@/assets/icons/vuejs.svg" width="35" />
-          <img src="@/assets/icons/typescript.svg" width="35" />
-          <img src="@/assets/icons/d3.svg" width="35" />
-          <img src="@/assets/icons/git.svg" width="35" />
+          <img :src="html" width="35" />
+          <img :src="css" width="35" />
+          <img :src="sass" width="35" />
+          <img :src="tailwind" width="35" />
+          <img :src="vuejs" width="35" />
+          <img :src="typescript" width="35" />
+          <img :src="d3" width="35" />
+          <img :src="git" width="35" />
         </template>
         <template #links>
           <ExternalLink link="https://app.prefect.cloud/auth/login" text="Prefect Cloud" />
@@ -109,14 +109,14 @@
           </p></template
         >
         <template #tools>
-          <img src="@/assets/icons/html.svg" width="35" />
-          <img src="@/assets/icons/css.svg" width="35" />
-          <img src="@/assets/icons/sass.svg" width="35" />
-          <img src="@/assets/icons/tailwind.svg" width="35" />
-          <img src="@/assets/icons/vuejs.svg" width="35" />
-          <img src="@/assets/icons/typescript.svg" width="35" />
-          <img src="@/assets/icons/d3.svg" width="35" />
-          <img src="@/assets/icons/git.svg" width="35" />
+          <img :src="html" width="35" />
+          <img :src="css" width="35" />
+          <img :src="sass" width="35" />
+          <img :src="tailwind" width="35" />
+          <img :src="vuejs" width="35" />
+          <img :src="typescript" width="35" />
+          <img :src="d3" width="35" />
+          <img :src="git" width="35" />
         </template>
         <template #links>
           <ExternalLink link="https://prefect-design.netlify.app/" text="Prefect Design" />
@@ -162,11 +162,11 @@
           </p>
         </template>
         <template #tools>
-          <img src="@/assets/icons/html.svg" width="35" />
-          <img src="@/assets/icons/css.svg" width="35" />
-          <img src="@/assets/icons/csharp.svg" width="35" />
-          <img src="@/assets/icons/dotnet.svg" width="35" />
-          <img src="@/assets/icons/mysql.svg" width="35" />
+          <img :src="html" width="35" />
+          <img :src="css" width="35" />
+          <img :src="csharp" width="35" />
+          <img :src="dotnet" width="35" />
+          <img :src="mysql" width="35" />
         </template>
         <template #links>
           <ExternalLink link="https://www.carahsoft.com/" text="Carahsoft Website" />
@@ -193,10 +193,10 @@
         </template>
 
         <template #tools>
-          <img src="@/assets/icons/html.svg" width="35" />
-          <img src="@/assets/icons/sass.svg" width="35" />
-          <img src="@/assets/icons/vuejs.svg" width="35" />
-          <img src="@/assets/icons/git.svg" width="35" />
+          <img :src="html" width="35" />
+          <img :src="sass" width="35" />
+          <img :src="vuejs" width="35" />
+          <img :src="git" width="35" />
         </template>
 
         <template #links>
@@ -272,10 +272,10 @@
         >
 
         <template #tools>
-          <img src="@/assets/icons/html.svg" width="35" />
-          <img src="@/assets/icons/css.svg" width="35" />
-          <img src="@/assets/icons/javascript.svg" width="35" />
-          <img src="@/assets/icons/git.svg" width="35" />
+          <img :src="html" width="35" />
+          <img :src="css" width="35" />
+          <img :src="javascript" width="35" />
+          <img :src="git" width="35" />
         </template>
 
         <template #links>
@@ -310,8 +310,8 @@
           </p>
         </template>
         <template #tools>
-          <img src="@/assets/icons/html.svg" width="35" />
-          <img src="@/assets/icons/sass.svg" width="35" />
+          <img :src="html" width="35" />
+          <img :src="sass" width="35" />
         </template>
         <template #links>
           <ExternalLink
@@ -342,4 +342,20 @@
   import ContentBlock from '@/components/ContentBlock.vue'
   import ProjectBlock from '@/components/ProjectBlock.vue'
   import ExternalLink from '@/components/ExternalLink.vue'
+  import css from '@/assets/icons/css.svg'
+  import d3 from '@/assets/icons/d3.svg'
+  import html from '@/assets/icons/html.svg'
+  import javascript from '@/assets/icons/javascript.svg'
+  import nodejs from '@/assets/icons/nodejs.svg'
+  import react from '@/assets/icons/react.svg'
+  import sass from '@/assets/icons/sass.svg'
+  import typescript from '@/assets/icons/typescript.svg'
+  import vuejs from '@/assets/icons/vuejs.svg'
+  import git from '@/assets/icons/git.svg'
+  import nuxt from '@/assets/icons/nuxt.svg'
+  import tailwind from '@/assets/icons/tailwind.svg'
+  import accessibility from '@/assets/icons/accessibility.svg'
+  import dotnet from '@/assets/icons/dotnet.svg'
+  import csharp from '@/assets/icons/csharp.svg'
+  import mysql from '@/assets/icons/mysql.svg'
 </script>
