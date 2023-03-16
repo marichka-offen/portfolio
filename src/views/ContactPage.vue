@@ -28,7 +28,7 @@
 <style>
   .contact__external-links {
     @apply flex
-    gap-8
+    gap-4
     flex-wrap;
   }
 </style>

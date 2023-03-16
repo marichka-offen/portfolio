@@ -31,17 +31,20 @@
   .app_container {
     @apply w-full
     h-full
-    sm:w-4/5
-    sm:h-4/5
-    rounded-xl
+    rounded-none
+    overflow-auto
     drop-shadow-2xl
     bg-white
     p-8
-    bg-opacity-95
     max-w-screen-xl
     flex
     flex-col
-    gap-12;
+    gap-12
+    bg-opacity-60
+    lg:bg-opacity-90
+    lg:w-4/5
+    lg:h-4/5
+    lg:rounded-xl;
     z-index: 999;
   }
 
