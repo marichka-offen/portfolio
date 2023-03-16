@@ -10,7 +10,7 @@ module.exports = {
       },
       colors: {
         'e-cyan': '#4dd0e1',
-        'e-magenta': '#e91e63',
+        'e-magenta': '#ec407a',
         'e-yellow': '#ffff00'
       }
     }

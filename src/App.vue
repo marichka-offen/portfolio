@@ -41,7 +41,7 @@
     max-w-screen-xl
     flex
     flex-col
-    gap-8;
+    gap-12;
     z-index: 999;
   }
 

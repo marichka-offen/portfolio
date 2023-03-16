@@ -1,3 +1,6 @@
+<!-- <template>
+  <div>THIS IS FUCKING CONFUSING</div>
+</template> -->
 <template>
   <ContentBlock>
     <template #header> Contact </template>
@@ -7,9 +10,12 @@
       hear about their experiences. Let's grab a virtual coffee and chat about anything and
       everything. I promise to read each and every message and help in any way I can. Looking
       forward to hearing from you!
-      <ExternalLink link="mailto: marichka.offen@gmail.com" text="marichka.offen@gmail.com" />
-      <ExternalLink link="https://github.com/marichka-offen" text="GitHub" />
-      <ExternalLink link="https://www.linkedin.com/in/marichka-offen/" text="LinkedIn" />
+
+      <div class="contact__external-links">
+        <ExternalLink link="mailto: marichka.offen@gmail.com" text="marichka.offen@gmail.com" />
+        <ExternalLink link="https://github.com/marichka-offen" text="GitHub" />
+        <ExternalLink link="https://www.linkedin.com/in/marichka-offen/" text="LinkedIn" />
+      </div>
     </template>
   </ContentBlock>
 </template>
@@ -18,3 +24,11 @@
   import ContentBlock from '@/components/ContentBlock.vue'
   import ExternalLink from '@/components/ExternalLink.vue'
 </script>
+
+<style>
+  .contact__external-links {
+    @apply flex
+    gap-8
+    flex-wrap;
+  }
+</style>
