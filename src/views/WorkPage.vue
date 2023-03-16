@@ -1,5 +1,6 @@
 <template>
-  <ContentBlock>
+  <h1>Work</h1>
+  <!-- <ContentBlock>
     <template #header> Projects </template>
     <template #default>
       Welcome to my project section. Here you'll find a collection of my personal training projects,
@@ -7,10 +8,10 @@
       work projects. Some of the projects include links to their website and source code, while
       others only have a picture and description because I don't have permission to share the code
       after leaving the job. I'm continually adding new projects to this section, so stay tuned for
-      updates!
+      updates!-->
 
-      <!-- Prefect Cloud/Server -->
-      <ProjectBlock>
+  <!-- Prefect Cloud/Server -->
+  <!-- <ProjectBlock>
         <template #header> Prefect Cloud | Server </template>
         <template #images>
           <ThumbnailImage
@@ -76,10 +77,10 @@
             text="Prefect Server GitHub (Open-source)"
           />
         </template>
-      </ProjectBlock>
+      </ProjectBlock> -->
 
-      <!-- Prefect Design -->
-      <ProjectBlock>
+  <!-- Prefect Design -->
+  <!-- <ProjectBlock>
         <template #header> Prefect Design | Prefect UI Library | Vue Charts </template>
         <template #images>
           <ThumbnailImage :imageLink="prefect5" alt="Prefect Design component library" />
@@ -147,10 +148,10 @@
             text="Prefect Vue Charts (Open-source)"
           />
         </template>
-      </ProjectBlock>
+      </ProjectBlock> -->
 
-      <!-- Carahsoft -->
-      <ProjectBlock>
+  <!-- Carahsoft -->
+  <!-- <ProjectBlock>
         <template #header> Carahsell | Carahsoft website </template>
         <template #images>
           <ThumbnailImage :imageLink="carahsoft1" alt="Carahsoft CRM system" />
@@ -189,10 +190,10 @@
         <template #links>
           <ExternalLink link="https://www.carahsoft.com/" text="Carahsoft Website" />
         </template>
-      </ProjectBlock>
+      </ProjectBlock> -->
 
-      <!-- History Reconsidered -->
-      <ProjectBlock>
+  <!-- History Reconsidered -->
+  <!-- <ProjectBlock>
         <template #header> History Reconsidered </template>
         <template #content>
           <p>
@@ -224,10 +225,10 @@
             text="GitHub"
           />
         </template>
-      </ProjectBlock>
+      </ProjectBlock> -->
 
-      <!-- Let's Hang -->
-      <ProjectBlock>
+  <!-- Let's Hang -->
+  <!-- <ProjectBlock>
         <template #header> Let's Hang </template>
         <template #content>
           <p>
@@ -261,10 +262,10 @@
           <ExternalLink link="https://lets-hang.netlify.com/" text="Game" />
           <ExternalLink link="https://github.com/marichka-offen/lets-hang-game" text="GitHub" />
         </template>
-      </ProjectBlock>
+      </ProjectBlock>-->
 
-      <!-- Pig Game -->
-      <ProjectBlock>
+  <!-- Pig Game -->
+  <!--  <ProjectBlock>
         <template #header> Pig Game </template>
         <template #content>
           <p>
@@ -300,10 +301,10 @@
           <ExternalLink link="http://pig-game-learning-experience.surge.sh/" text="Game" />
           <ExternalLink link="http://pig-game-learning-experience.surge.sh/" text="GitHub" />
         </template>
-      </ProjectBlock>
+      </ProjectBlock> -->
 
-      <!-- Natours -->
-      <ProjectBlock>
+  <!-- Natours -->
+  <!-- <ProjectBlock>
         <template #header> Natours | Trillo | Nexter</template>
         <template #content>
           <p>
@@ -353,7 +354,7 @@
         </template>
       </ProjectBlock>
     </template>
-  </ContentBlock>
+  </ContentBlock> -->
 </template>
 
 <script setup lang="ts">

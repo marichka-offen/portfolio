@@ -1,6 +1,8 @@
 <template>
   <div class="home-page">
-    <div class="home-page__bio">
+    <div>text</div>
+    <div>pic</div>
+    <!-- <div class="home-page__bio">
       <img :src="me" width="400" height="400" class="home-page__bio-image" />
 
       <div class="home-page__bio-text">
@@ -58,7 +60,7 @@
       <template #default>
         <LanguageSkillsGallery />
       </template>
-    </ContentBlock>
+    </ContentBlock> -->
   </div>
 </template>
 
@@ -73,39 +75,44 @@
 
 <style>
   .home-page {
-    @apply flex
+    @apply w-full
+    grid
+    grid-cols-2
+    gap-8
+    
+    /* @apply flex
     flex-col
-    gap-8;
+    gap-8; */;
   }
 
   .home-page__bio {
-    @apply flex
+    /* @apply flex
     gap-8
     flex-col
     lg:flex-row
     items-center
-    justify-center;
+    justify-center; */
   }
 
   .home-page__bio-text {
-    @apply flex
+    /* @apply flex
     flex-wrap
     flex-col
     gap-4
     order-2
-    lg:order-1;
+    lg:order-1; */
   }
 
   .home-page__bio-image {
-    @apply self-center
+    /* @apply self-center
     order-1
     lg:order-2
-    lg:self-start;
+    lg:self-start; */
   }
 
   .home-page__links {
-    @apply flex
+    /* @apply flex
     flex-wrap
-    gap-4;
+    gap-4; */
   }
 </style>
