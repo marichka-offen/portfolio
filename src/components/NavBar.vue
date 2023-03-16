@@ -7,6 +7,9 @@
         </router-link>
       </li>
       <li role="menuitem">
+        <router-link class="nav-bar__link" :to="{ name: 'skills' }">Skills</router-link>
+      </li>
+      <li role="menuitem">
         <router-link class="nav-bar__link" :to="{ name: 'work' }">Work</router-link>
       </li>
       <li role="menuitem">
@@ -24,7 +27,7 @@
       gap-4;
   }
 
-  .nav-bar__link--active {
+  .nav-bar__link.nav-bar__link--active {
     @apply border-b-e-cyan
       border-b-4
       transition-all;
