@@ -2,9 +2,8 @@
   <div class="app">
     <div class="app_container">
       <WebsiteHeader />
-      <NavBar class="app__nav-bar" />
       <router-view v-slot="{ Component }">
-        <Transition name="slide" mode="out-in">
+        <Transition name="fade" mode="out-in">
           <component :is="Component" />
         </Transition>
       </router-view>
@@ -13,7 +12,6 @@
 </template>
 
 <script setup lang="ts">
-  import NavBar from '@/components/NavBar.vue'
   import WebsiteHeader from './components/WebsiteHeader.vue'
 </script>
 
@@ -41,17 +39,19 @@
     p-8
     bg-opacity-95
     max-w-screen-xl
-    overflow-auto;
+    flex
+    flex-col
+    gap-8;
     z-index: 999;
   }
 
-  .slide-enter-from,
-  .slide-leave-to {
+  .fade-enter-from,
+  .fade-leave-to {
     opacity: 0;
   }
 
-  .slide-enter-active,
-  .slide-leave-active {
+  .fade-enter-active,
+  .fade-leave-active {
     transition: all 0.3s ease-out;
   }
 </style>
