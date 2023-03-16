@@ -20,22 +20,29 @@
 <style>
   .app {
     @apply w-full
-    relative
+    h-screen
+    bg-no-repeat
+    bg-cover
     flex
-    flex-col
+    justify-center
     items-center
-    leading-relaxed
-    dark:bg-[#1A1F2B]
-    text-slate-900
-    dark:text-white;
-    min-height: 100vh;
+    bg-background;
     font-family: 'Roboto', sans-serif;
   }
 
   .app_container {
-    @apply max-w-5xl
-    px-8
-    pb-32;
+    @apply w-full
+    h-full
+    sm:w-4/5
+    sm:h-4/5
+    rounded-xl
+    drop-shadow-2xl
+    bg-white
+    p-8
+    bg-opacity-95
+    max-w-screen-xl
+    overflow-auto;
+    z-index: 999;
   }
 
   .slide-enter-from,

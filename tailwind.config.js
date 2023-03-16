@@ -4,7 +4,16 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
-    extend: {}
+    extend: {
+      backgroundImage: {
+        background: "url('./src/assets/background/background.svg')"
+      },
+      colors: {
+        'e-cyan': '#4dd0e1',
+        'e-magenta': '#e91e63',
+        'e-yellow': '#ffff00'
+      }
+    }
   },
   plugins: []
 }
