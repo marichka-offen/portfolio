@@ -3,6 +3,9 @@
     <div class="project-block__header">
       <slot name="header" />
     </div>
+    <div class="project-block__images">
+      <slot name="images" />
+    </div>
     <div class="project-block__content">
       <slot name="content" />
     </div>
@@ -40,5 +43,17 @@
     @apply flex
     flex-wrap
     gap-4;
+  }
+
+  .project-block__images {
+    @apply flex
+    flex-wrap
+    gap-4
+    relative
+    items-center;
+  }
+
+  .project-block__images > * {
+    @apply my-4;
   }
 </style>

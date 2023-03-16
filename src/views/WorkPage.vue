@@ -12,6 +12,15 @@
       <!-- Prefect Cloud/Server -->
       <ProjectBlock>
         <template #header> Prefect Cloud | Server </template>
+        <template #images>
+          <ThumbnailImage
+            :imageLink="prefect1"
+            alt="Prefect Cloud main dashboard in dark mode with D3 scatter plot"
+          />
+          <ThumbnailImage :imageLink="prefect2" alt="Prefect Cloud flow run details page" />
+          <ThumbnailImage :imageLink="prefect4" alt="Prefect Cloud audit logs page" />
+          <ThumbnailImage :imageLink="prefect3" alt="Prefect Server notifications page" />
+        </template>
         <template #content>
           <p>
             During my time at Prefect, I worked on the development of Prefect Cloud and Prefect
@@ -72,6 +81,10 @@
       <!-- Prefect Design -->
       <ProjectBlock>
         <template #header> Prefect Design | Prefect UI Library | Vue Charts </template>
+        <template #images>
+          <ThumbnailImage :imageLink="prefect5" alt="Prefect Design component library" />
+          <ThumbnailImage :imageLink="prefect6" alt="Prefect UI Library component library" />
+        </template>
         <template #content>
           <p>
             As part of my work at Prefect, I contributed to the development of several component
@@ -139,6 +152,11 @@
       <!-- Carahsoft -->
       <ProjectBlock>
         <template #header> Carahsell | Carahsoft website </template>
+        <template #images>
+          <ThumbnailImage :imageLink="carahsoft1" alt="Carahsoft CRM system" />
+          <ThumbnailImage :imageLink="carahsoft2" alt="Carahsoft CRM system" />
+          <ThumbnailImage :imageLink="carahsoft3" alt="Carahsoft CRM system" />
+        </template>
         <template #content>
           <p>
             During my time at Carahsoft, I had the opportunity to work on two major projects:
@@ -346,16 +364,23 @@
   import d3 from '@/assets/icons/d3.svg'
   import html from '@/assets/icons/html.svg'
   import javascript from '@/assets/icons/javascript.svg'
-  import nodejs from '@/assets/icons/nodejs.svg'
   import react from '@/assets/icons/react.svg'
   import sass from '@/assets/icons/sass.svg'
   import typescript from '@/assets/icons/typescript.svg'
   import vuejs from '@/assets/icons/vuejs.svg'
   import git from '@/assets/icons/git.svg'
-  import nuxt from '@/assets/icons/nuxt.svg'
   import tailwind from '@/assets/icons/tailwind.svg'
-  import accessibility from '@/assets/icons/accessibility.svg'
   import dotnet from '@/assets/icons/dotnet.svg'
   import csharp from '@/assets/icons/csharp.svg'
   import mysql from '@/assets/icons/mysql.svg'
+  import prefect1 from '@/assets/images/prefect-dashboard.png'
+  import prefect2 from '@/assets/images/prefect-flow-run.png'
+  import prefect3 from '@/assets/images/prefect-notifications.png'
+  import prefect4 from '@/assets/images/prefect-audit-logs.png'
+  import prefect5 from '@/assets/images/prefect-design.png'
+  import prefect6 from '@/assets/images/prefect-ui.png'
+  import carahsoft1 from '@/assets/images/carahsoft1.png'
+  import carahsoft2 from '@/assets/images/carahsoft2.png'
+  import carahsoft3 from '@/assets/images/carahsoft3.png'
+  import ThumbnailImage from '@/components/ThumbnailImage.vue'
 </script>
