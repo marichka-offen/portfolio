@@ -28,18 +28,31 @@
   }
 
   .nav-bar__link.nav-bar__link--active {
-    @apply border-b-e-cyan
-      border-b-4
-      transition-all;
+    background-image: linear-gradient(#4dd0e1, #4dd0e1);
+    background-size: 100% 5px;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .nav-bar__link.nav-bar__link--active:hover {
+    background-size: 100% 5px;
+    transition: none;
   }
 
   .nav-bar__link {
     @apply flex
-      lowercase
-      border-b-4
-      border-b-transparent
-      transition-all
-      hover:border-e-magenta
-      active:border-e-yellow;
+    lowercase
+    bg-no-repeat;
+    background-image: linear-gradient(transparent calc(65% - 5px), #ec407a 3px);
+    background-size: 0;
+    transition: 0.2s ease-out;
+  }
+
+  .nav-bar__link:hover {
+    background-size: 100%;
+  }
+
+  .nav-bar__link:active {
+    background-image: linear-gradient(transparent calc(65% - 5px), #ffff00 3px);
   }
 </style>
