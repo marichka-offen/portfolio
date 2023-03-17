@@ -84,7 +84,10 @@
     }
 
     current.value = index
-    router.push({ path: `/${route}`, query: { set: `${route}-set-${index}` } })
+    router.push({
+      path: `/${props.routeString}`,
+      query: { set: `${props.routeString}-set-${index}` }
+    })
   }
 </script>
 
