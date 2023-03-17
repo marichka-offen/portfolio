@@ -11,7 +11,7 @@
       <div
         @click="goToSet(index)"
         class="side-scroll-nav__dot"
-        :class="route.query.set === `skill-set-${index}` ? 'opacity-100' : 'opacity-25'"
+        :class="route.query.set === `${routeString}-set-${index}` ? 'opacity-100' : 'opacity-25'"
       ></div>
     </div>
 
@@ -31,6 +31,7 @@
 
   const props = defineProps<{
     totalPages: number
+    routeString: string
   }>()
 
   const route = useRoute()
@@ -51,7 +52,10 @@
       current.value = 1
     }
 
-    router.push({ path: '/skills', query: { set: `skill-set-${current.value}` } })
+    router.push({
+      path: `/${props.routeString}`,
+      query: { set: `${props.routeString}-set-${current.value}` }
+    })
   }
 
   const moveUp = () => {
@@ -64,7 +68,10 @@
       current.value = props.totalPages
     }
 
-    router.push({ path: '/skills', query: { set: `skill-set-${current.value}` } })
+    router.push({
+      path: `/${props.routeString}`,
+      query: { set: `${props.routeString}-set-${current.value}` }
+    })
   }
 
   const goToSet = (index: number) => {
@@ -77,7 +84,7 @@
     }
 
     current.value = index
-    router.push({ path: '/skills', query: { set: `skill-set-${index}` } })
+    router.push({ path: `/${route}`, query: { set: `${route}-set-${index}` } })
   }
 </script>
 

@@ -3,7 +3,7 @@
     <div class="skills-page__skills-container">
       <TransitionGroup :name="slideDirection">
         <ContentBlock v-if="!route.query.set">
-          <template #header> Ta-da! </template>
+          <template #header> Skills that pay the bills! </template>
           <template #default>
             <p>
               Welcome to my portfolio skills page! As a developer, I have experience in a variety of
@@ -26,14 +26,14 @@
             </p>
             <button
               class="border p-2 bg-slate-100 rounded-md w-max"
-              @click="router.push({ path: '/skills', query: { set: `skill-set-1` } })"
+              @click="router.push({ path: '/skills', query: { set: `skills-set-1` } })"
             >
               Check out the skillset
             </button>
           </template>
         </ContentBlock>
 
-        <div class="skills-page__skill-set" v-if="route.query.set === 'skill-set-1'">
+        <div class="skills-page__skill-set" v-if="route.query.set === 'skills-set-1'">
           <ContentBlock>
             <template #header> Skills </template>
             <template #default>
@@ -52,7 +52,7 @@
           </ContentBlock>
         </div>
 
-        <div class="skills-page__skill-set" v-if="route.query.set === 'skill-set-2'">
+        <div class="skills-page__skill-set" v-if="route.query.set === 'skills-set-2'">
           <ContentBlock>
             <template #header> Growing Skills </template>
             <template #default>
@@ -66,7 +66,11 @@
       </TransitionGroup>
     </div>
 
-    <SideScrollNav :totalPages="totalPages" @updateDirection="slideDirection = $event" />
+    <SideScrollNav
+      :totalPages="totalPages"
+      routeString="skills"
+      @updateDirection="slideDirection = $event"
+    />
   </div>
 </template>
 
