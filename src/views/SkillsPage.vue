@@ -165,8 +165,9 @@
   }
 
   .skills-page__skills-container {
-    @apply h-full 
-    w-full
+    @apply /* h-full  */
+    mt-32
+    h-full
     w-11/12
     pr-8;
   }
@@ -214,7 +215,7 @@
   }
 
   .slide-up-leave-to {
-    transform: translateY(100px);
+    transform: translateY(100%);
     opacity: 0;
   }
 
@@ -226,7 +227,7 @@
   }
 
   .slide-down-enter-from {
-    transform: translateY(100px);
+    transform: translateY(100%);
     opacity: 0;
   }
   .slide-down-leave-to {

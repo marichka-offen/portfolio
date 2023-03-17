@@ -40,7 +40,7 @@
     max-w-screen-xl
     flex
     flex-col
-    gap-12
+    /* gap-12 */
     bg-opacity-80
     lg:bg-opacity-90
     lg:w-4/5

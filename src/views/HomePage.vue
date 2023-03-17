@@ -50,7 +50,7 @@ import type ContentBlockVue from '@/components/ContentBlock.vue'
     h-full
     flex-col
     gap-8
-    items-start
+    items-center
     lg:justify-center
     lg:h-4/5
     lg:flex-row;
