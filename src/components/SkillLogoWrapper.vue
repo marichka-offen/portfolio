@@ -1,6 +1,8 @@
 <template>
   <div class="skill-logo-wrapper">
-    <img :src="image" :alt="altText" class="skill-logo-wrapper__image" />
+    <slot>
+      <img :src="image" :alt="altText" class="skill-logo-wrapper__image" />
+    </slot>
   </div>
 </template>
 
@@ -8,7 +10,7 @@
   import { computed, ref, toRefs } from 'vue'
 
   const props = defineProps<{
-    image: string
+    image?: string
     color: string
   }>()
 
