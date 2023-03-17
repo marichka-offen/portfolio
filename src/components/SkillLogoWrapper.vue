@@ -37,7 +37,8 @@
     dark:bg-[#586F7C]
     border-2
     sm:w-20
-    sm:h-20;
+    sm:h-20
+    shadow-lg;
     border-color: v-bind(backgroundColor);
   }
 

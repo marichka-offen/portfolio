@@ -105,11 +105,7 @@
     /* absolute to the app-container */
     sm:fixed
     right-10
-    top-1/3
-    /* w-min
-    -mt-[400px]
-    -mr-10
-    min-h-[1300px]; */;
+    top-1/3;
   }
 
   .side-scroll-nav__dot {
@@ -127,6 +123,8 @@
     @apply cursor-pointer
     text-e-cyan
     transition-all
-    active:text-e-magenta;
+    active:text-e-magenta
+    shadow-xl
+    rounded-full;
   }
 </style>

@@ -78,14 +78,14 @@
             </p>
           </template>
           <template #tools>
-            <img :src="html" width="35" />
-            <img :src="css" width="35" />
-            <img :src="sass" width="35" />
-            <img :src="tailwind" width="35" />
-            <img :src="vuejs" width="35" />
-            <img :src="typescript" width="35" />
-            <img :src="d3" width="35" />
-            <img :src="git" width="35" />
+            <SkillLogoWrapper :image="html" color="#ef652a" />
+            <SkillLogoWrapper :image="css" color="#33A9DC" />
+            <SkillLogoWrapper :image="sass" color="#CB6699" />
+            <SkillLogoWrapper :image="tailwind" color="#07B6D5" />
+            <SkillLogoWrapper :image="vuejs" color="#41b883" />
+            <SkillLogoWrapper :image="typescript" color="#007acc" />
+            <SkillLogoWrapper :image="d3" color="#F9A03C" />
+            <SkillLogoWrapper :image="git" color="#DE4C36" />
           </template>
           <template #links>
             <ExternalLink link="https://app.prefect.cloud/auth/login" text="Prefect Cloud" />
@@ -137,14 +137,14 @@
             </p></template
           >
           <template #tools>
-            <img :src="html" width="35" />
-            <img :src="css" width="35" />
-            <img :src="sass" width="35" />
-            <img :src="tailwind" width="35" />
-            <img :src="vuejs" width="35" />
-            <img :src="typescript" width="35" />
-            <img :src="d3" width="35" />
-            <img :src="git" width="35" />
+            <SkillLogoWrapper :image="html" color="#ef652a" />
+            <SkillLogoWrapper :image="css" color="#33A9DC" />
+            <SkillLogoWrapper :image="sass" color="#CB6699" />
+            <SkillLogoWrapper :image="tailwind" color="#07B6D5" />
+            <SkillLogoWrapper :image="vuejs" color="#41b883" />
+            <SkillLogoWrapper :image="typescript" color="#007acc" />
+            <SkillLogoWrapper :image="d3" color="#F9A03C" />
+            <SkillLogoWrapper :image="git" color="#DE4C36" />
           </template>
           <template #links>
             <ExternalLink link="https://prefect-design.netlify.app/" text="Prefect Design" />
@@ -197,11 +197,11 @@
             </p>
           </template>
           <template #tools>
-            <img :src="html" width="35" />
-            <img :src="css" width="35" />
-            <img :src="csharp" width="35" />
-            <img :src="dotnet" width="35" />
-            <img :src="mysql" width="35" />
+            <SkillLogoWrapper :image="html" color="#ef652a" />
+            <SkillLogoWrapper :image="css" color="#33A9DC" />
+            <SkillLogoWrapper :image="csharp" color="#9B4F96" />
+            <SkillLogoWrapper :image="dotnet" color="#00AEEF" />
+            <SkillLogoWrapper :image="mysql" color="#DE8A03" />
           </template>
           <template #links>
             <ExternalLink link="https://www.carahsoft.com/" text="Carahsoft Website" />
@@ -228,10 +228,10 @@
           </template>
 
           <template #tools>
-            <img :src="html" width="35" />
-            <img :src="sass" width="35" />
-            <img :src="vuejs" width="35" />
-            <img :src="git" width="35" />
+            <SkillLogoWrapper :image="html" color="#ef652a" />
+            <SkillLogoWrapper :image="sass" color="#CB6699" />
+            <SkillLogoWrapper :image="vuejs" color="#41b883" />
+            <SkillLogoWrapper :image="git" color="#DE4C36" />
           </template>
 
           <template #links>
@@ -269,10 +269,10 @@
           >
 
           <template #tools>
-            <img src="@/assets/icons/html.svg" width="35" />
-            <img src="@/assets/icons/css.svg" width="35" />
-            <img src="@/assets/icons/javascript.svg" width="35" />
-            <img src="@/assets/icons/git.svg" width="35" />
+            <SkillLogoWrapper :image="html" color="#ef652a" />
+            <SkillLogoWrapper :image="css" color="#33A9DC" />
+            <SkillLogoWrapper :image="javascript" color="#F7DF1E" />
+            <SkillLogoWrapper :image="git" color="#DE4C36" />
           </template>
 
           <template #links>
@@ -308,10 +308,10 @@
           >
 
           <template #tools>
-            <img :src="html" width="35" />
-            <img :src="css" width="35" />
-            <img :src="javascript" width="35" />
-            <img :src="git" width="35" />
+            <SkillLogoWrapper :image="html" color="#ef652a" />
+            <SkillLogoWrapper :image="css" color="#33A9DC" />
+            <SkillLogoWrapper :image="javascript" color="#F7DF1E" />
+            <SkillLogoWrapper :image="git" color="#DE4C36" />
           </template>
 
           <template #links>
@@ -346,8 +346,8 @@
             </p>
           </template>
           <template #tools>
-            <img :src="html" width="35" />
-            <img :src="sass" width="35" />
+            <SkillLogoWrapper :image="html" color="#ef652a" />
+            <SkillLogoWrapper :image="sass" color="#CB6699" />
           </template>
           <template #links>
             <ExternalLink
@@ -401,12 +401,12 @@
             </p>
           </template>
           <template #tools>
-            <img :src="html" width="35" />
-            <img :src="css" width="35" />
-            <img :src="tailwind" width="35" />
-            <img :src="vuejs" width="35" />
-            <img :src="typescript" width="35" />
-            <img :src="git" width="35" />
+            <SkillLogoWrapper :image="html" color="#ef652a" />
+            <SkillLogoWrapper :image="css" color="#33A9DC" />
+            <SkillLogoWrapper :image="tailwind" color="#07B6D5" />
+            <SkillLogoWrapper :image="vuejs" color="#41b883" />
+            <SkillLogoWrapper :image="typescript" color="#007acc" />
+            <SkillLogoWrapper :image="git" color="#DE4C36" />
           </template>
           <template #links>
             <ExternalLink link="https://www.marichkaoffen.com/" text="Portfolio" />
@@ -428,6 +428,7 @@
   import SideScrollNav from '@/components/SideScrollNav.vue'
   import ProjectBlock from '@/components/ProjectBlock.vue'
   import ExternalLink from '@/components/ExternalLink.vue'
+  import SkillLogoWrapper from '@/components/SkillLogoWrapper.vue'
 
   import css from '@/assets/icons/css.svg'
   import d3 from '@/assets/icons/d3.svg'
