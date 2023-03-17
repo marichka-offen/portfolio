@@ -2,18 +2,60 @@
   <div class="skills-page">
     <div class="skills-page__skills-container">
       <TransitionGroup :name="slideDirection">
+        <div v-if="!route.query.set" class="skills-page__intro">
+          <p>
+            Welcome to my portfolio skills page! As a developer, I have experience in a variety of
+            programming languages and web technologies. I specialize in front-end development,
+            including HTML, CSS, and JavaScript. These languages form the foundation of most modern
+            websites and applications, and I've honed my skills in each one to build beautiful and
+            user-friendly interfaces.
+          </p>
+
+          <p>
+            In addition to front-end development, I also have experience in back-end technologies
+            such as Node.js, as well as frameworks like Vue.js and React. With these tools, I've
+            built full-stack applications that are secure, scalable, and easy to maintain.
+          </p>
+
+          <p>
+            I'm always eager to learn new skills and technologies, and I'm always looking for new
+            opportunities to grow as a developer. If you have a project that you'd like to discuss,
+            please feel free to reach out to me!
+          </p>
+
+          <button class="border p-2 bg-slate-100 rounded-md w-max" @click="goToSet(1)">
+            Check out the skillset
+          </button>
+        </div>
         <div class="skills-page__skill-set" v-if="route.query.set === 'skill-set-1'">
-          These are the skills that I have acquired through practical experience gained in
-          professional settings, as well as through self-directed study driven by personal interest.
-          <SkillsGallery />
+          <ContentBlock>
+            <template #header> Skills </template>
+            <template #default>
+              These are the skills that I have acquired through practical experience gained in
+              professional settings, as well as through self-directed study driven by personal
+              interest.
+              <SkillsGallery />
+            </template>
+          </ContentBlock>
+
+          <ContentBlock>
+            <template #header> Languages </template>
+            <template #default>
+              <LanguageSkillsGallery />
+            </template>
+          </ContentBlock>
         </div>
 
         <div class="skills-page__skill-set" v-if="route.query.set === 'skill-set-2'">
-          2 Developing skills
-        </div>
-
-        <div class="skills-page__skill-set" v-if="route.query.set === 'skill-set-3'">
-          3 Languages
+          <ContentBlock>
+            <template #header> Growing Skills </template>
+            <template #default>
+              These are the skills I'm currently focused on mastering, and I'm continually seeking
+              out recommended courses to help me do so. Feel free to browse the links to these
+              courses, as I highly recommend them to anyone seeking to improve in these areas.
+              <GrowingSkillsGallery />
+            </template>
+          </ContentBlock>
         </div>
       </TransitionGroup>
     </div>
@@ -49,9 +91,12 @@
   import { useRoute } from 'vue-router'
   import { ref } from 'vue'
   import SkillsGallery from '@/components/SkillsGallery.vue'
+  import GrowingSkillsGallery from '@/components/GrowingSkillsGallery.vue'
+  import ContentBlock from '@/components/ContentBlock.vue'
+  import LanguageSkillsGallery from '@/components/LanguageSkillsGallery.vue'
 
   const current = ref(0)
-  const totalPages = ref(3)
+  const totalPages = ref(2)
   const route = useRoute()
 
   const slideDirection = ref('slide-up')
@@ -91,28 +136,39 @@
 </script>
 
 <style>
-  .skills-page__skill-set {
-    @apply w-full
-    h-full
-    flex
-    flex-col
-    gap-8
-    text-center
-    p-4;
-  }
-
   .skills-page {
     @apply w-full
     h-full
     flex
     justify-center
     items-center
-    gap-4;
+    gap-4
+    min-h-full;
+  }
+
+  .skills-page__skill-set {
+    @apply w-full
+    h-full
+    flex
+    flex-col
+    gap-12
+    text-center
+    p-4;
+  }
+
+  .skills-page__intro {
+    @apply w-full
+    h-full
+    flex
+    flex-col
+    gap-8;
   }
 
   .skills-page__skills-container {
-    @apply w-11/12
-    h-full;
+    @apply h-full 
+    w-full
+    w-11/12
+    pr-8;
   }
 
   .skills-page__nav {
@@ -121,7 +177,9 @@
     justify-center
     items-center
     gap-4
-    w-1/12;
+    w-min
+    -mt-32
+    -mr-10;
   }
 
   .skills-page__nav-dot {
@@ -156,7 +214,7 @@
   }
 
   .slide-up-leave-to {
-    transform: translateY(100%);
+    transform: translateY(100px);
     opacity: 0;
   }
 
@@ -168,7 +226,7 @@
   }
 
   .slide-down-enter-from {
-    transform: translateY(100%);
+    transform: translateY(100px);
     opacity: 0;
   }
   .slide-down-leave-to {
