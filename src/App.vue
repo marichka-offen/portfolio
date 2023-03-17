@@ -25,7 +25,7 @@
     justify-center
     items-center
     bg-background
-    text-xl;
+    text-lg;
     font-family: 'Roboto', sans-serif;
   }
 

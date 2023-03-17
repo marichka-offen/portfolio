@@ -21,13 +21,14 @@
 <style>
   .project-block {
     @apply flex
+    h-full
     flex-wrap
     flex-col
     gap-4;
   }
 
   .project-block__header {
-    @apply text-2xl
+    @apply text-3xl
     border-b-2
     border-zinc-500;
     font-family: 'Nothing You Could Do', cursive;
@@ -36,10 +37,17 @@
   .project-block__tools {
     @apply flex
     flex-wrap
-    gap-4;
+    gap-4
+    py-4;
   }
 
   .project-block__links {
+    @apply flex
+    flex-wrap
+    gap-4;
+  }
+
+  .project-block__content {
     @apply flex
     flex-wrap
     gap-4;
