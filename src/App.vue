@@ -26,10 +26,11 @@
     items-center
     bg-background
     text-base
-    sm:text-lg
     box-border
+    sm:text-lg
     lg:p-8;
     font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;
   }
 
   .app_container {
@@ -48,9 +49,9 @@
     p-4
     sm:p-16
     sm:pt-0
-    pt-8
+    py-12
 
-    overflow-auto
+ overflow-auto
     z-50
     relative;
     grid-template-rows: 80px 1fr;

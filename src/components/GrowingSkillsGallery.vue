@@ -52,7 +52,6 @@
     flex-wrap
     justify-center
     items-center
-    overflow-auto
     gap-8
     w-full;
   }
