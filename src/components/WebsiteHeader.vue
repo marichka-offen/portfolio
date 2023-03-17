@@ -2,29 +2,12 @@
   <div class="website-header">
     <div class="website-header__title">M.</div>
 
-    <div>
-      <button v-if="!isDarkMode">
-        <vue-feather type="moon" class="" @click="isDarkMode = true"></vue-feather>
-      </button>
-      <button v-else>
-        <vue-feather type="sun" class="" @click="isDarkMode = false"></vue-feather>
-      </button>
-    </div>
+    <NavBar />
   </div>
 </template>
 
 <script setup lang="ts">
-  import { ref, watch } from 'vue'
-
-  const isDarkMode = ref(false)
-
-  watch(isDarkMode, (newVal) => {
-    if (newVal) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  })
+  import NavBar from './NavBar.vue'
 </script>
 
 <style>
@@ -33,9 +16,13 @@
   .website-header {
     @apply w-full
     flex
+    gap-8
     justify-between
     items-center
-    py-10;
+    flex-col
+    sm:items-end
+    sm:flex-row
+    h-20;
   }
 
   .website-header__title {
@@ -43,5 +30,6 @@
     relative;
     font-family: 'Nothing You Could Do', cursive;
     line-height: 0.6;
+    text-shadow: 3px 3px 0px #4dd0e1, 10px 10px 0px #fc00ff, 13px 15px 0px #ffff00;
   }
 </style>

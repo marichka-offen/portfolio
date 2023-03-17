@@ -2,9 +2,8 @@
   <div class="app">
     <div class="app_container">
       <WebsiteHeader />
-      <NavBar class="app__nav-bar" />
       <router-view v-slot="{ Component }">
-        <Transition name="slide" mode="out-in">
+        <Transition name="fade" mode="out-in">
           <component :is="Component" />
         </Transition>
       </router-view>
@@ -13,38 +12,58 @@
 </template>
 
 <script setup lang="ts">
-  import NavBar from '@/components/NavBar.vue'
   import WebsiteHeader from './components/WebsiteHeader.vue'
 </script>
 
 <style>
   .app {
     @apply w-full
-    relative
+    h-screen
+    bg-no-repeat
+    bg-cover
     flex
-    flex-col
+    justify-center
     items-center
-    leading-relaxed
-    dark:bg-[#1A1F2B]
-    text-slate-900
-    dark:text-white;
-    min-height: 100vh;
+    bg-background
+    text-base
+    box-border
+    sm:text-lg
+    lg:p-8;
     font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;
   }
 
   .app_container {
-    @apply max-w-5xl
-    px-8
-    pb-32;
+    @apply sm:w-full
+    h-full
+    lg:max-w-screen-xl
+    lg:max-h-[1024px]
+
+    bg-white
+    bg-opacity-80
+    drop-shadow-2xl
+    rounded-xl
+    
+    grid
+    gap-16
+    p-4
+    sm:p-16
+    sm:pt-0
+    py-12
+
+ overflow-auto
+    z-50
+    relative;
+    grid-template-rows: 80px 1fr;
   }
 
-  .slide-enter-from,
-  .slide-leave-to {
+  .fade-enter-from,
+  .fade-leave-to {
     opacity: 0;
   }
 
-  .slide-enter-active,
-  .slide-leave-active {
+  .fade-enter-active,
+  .fade-leave-active {
     transition: all 0.3s ease-out;
   }
 </style>

@@ -1,100 +1,58 @@
 <template>
-  <div>
-    <nav class="nav-bar" role="navigation" title="Main Navigation">
-      <ul class="nav-bar__list" v-if="media.sm" role="menu">
-        <li role="menuitem">
-          <router-link :to="{ name: 'home' }" class="nav-bar__router-link" aria-label="Home">
-            <vue-feather type="home" class="nav-bar__router-link-icon"></vue-feather>
-          </router-link>
-        </li>
-        <li role="menuitem">
-          <router-link :to="{ name: 'work' }" class="nav-bar__router-link">Work</router-link>
-        </li>
-        <li role="menuitem">
-          <router-link :to="{ name: 'contact' }" class="nav-bar__router-link">Contact</router-link>
-        </li>
-      </ul>
-      <button class="nav-bar__menu-button" v-if="!media.sm && !modal" @click="modal = true">
-        <vue-feather type="menu" class="nav-bar__mobile-menu"></vue-feather>
-      </button>
-    </nav>
-    <Teleport to="body">
-      <MenuModal v-if="modal" @close="modal = false" />
-    </Teleport>
-  </div>
+  <nav class="nav-bar" role="navigation" title="Main Navigation">
+    <ul class="nav-bar__list" role="menu">
+      <li role="menuitem">
+        <router-link class="nav-bar__link" :to="{ name: 'home' }" aria-label="Home">
+          Home
+        </router-link>
+      </li>
+      <li role="menuitem">
+        <router-link class="nav-bar__link" :to="{ name: 'skills' }">Skills</router-link>
+      </li>
+      <li role="menuitem">
+        <router-link class="nav-bar__link" :to="{ name: 'work' }">Work</router-link>
+      </li>
+      <li role="menuitem">
+        <router-link class="nav-bar__link" :to="{ name: 'contact' }">Contact</router-link>
+      </li>
+    </ul>
+  </nav>
 </template>
 
-<script setup lang="ts">
-  import { media } from '@/compositions/useMedia'
-  import { ref } from 'vue'
-  import MenuModal from '@/components/MenuModal.vue'
-
-  const modal = ref(false)
-</script>
-
 <style>
-  .nav-bar {
-    @apply fixed
-    w-max
-    h-max
-    bottom-8
-    right-0
-    left-0
-    mx-auto
-    z-50
-    sm:z-30;
-  }
-
-  .nav-bar__list,
-  .nav-bar__menu-button {
-    @apply bg-zinc-400
-    bg-opacity-10
-    bg-blend-multiply
-    flex
-    justify-center
-    items-center
-    w-max
-    gap-4
-    backdrop-blur-sm
-    rounded-full
-    z-40
-    shadow-md
-    transition-all
-    p-2
-    sm:py-4
-    sm:px-8
-    dark:bg-opacity-60;
-  }
-
-  .nav-bar__router-link.nav-bar__link--active {
-    @apply bg-slate-700
-    text-white
-    rounded-full
-    transition-all
-    duration-300;
-  }
-
-  .nav-bar__router-link {
+  .nav-bar__list {
     @apply flex
-    hover:bg-slate-300
-    hover:text-black
-    rounded-full
-    py-2
-    px-4
-    transition-all;
+      justify-between
+      items-end
+      gap-4;
   }
 
-  .nav-bar__mobile-menu {
-    @apply p-4
-    hover:bg-slate-700
-    hover:text-white
-    rounded-full
-    transition-all
-    duration-300;
+  .nav-bar__link.nav-bar__link--active {
+    background-image: linear-gradient(#4dd0e1, #4dd0e1);
+    background-size: 100% 5px;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
   }
 
-  .nav-bar__close-button {
-    @apply z-50
-    relative;
+  .nav-bar__link.nav-bar__link--active:hover {
+    background-size: 100% 5px;
+    transition: none;
+  }
+
+  .nav-bar__link {
+    @apply flex
+    lowercase
+    bg-no-repeat;
+    background-image: linear-gradient(transparent calc(65% - 5px), #fc00ff 3px);
+    background-size: 0;
+    transition: 0.2s ease-out;
+  }
+
+  .nav-bar__link:hover {
+    background-size: 100%;
+  }
+
+  .nav-bar__link:active {
+    background-image: linear-gradient(transparent calc(65% - 5px), #fef08a 3px);
   }
 </style>
