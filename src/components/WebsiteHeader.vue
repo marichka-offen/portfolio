@@ -16,8 +16,12 @@
   .website-header {
     @apply w-full
     flex
-    items-end
+    gap-8
     justify-between
+    items-center
+    flex-col
+    sm:items-end
+    sm:flex-row
     h-20;
   }
 

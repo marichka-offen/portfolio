@@ -25,15 +25,15 @@
     justify-center
     items-center
     bg-background
-    text-lg
+    text-base
+    sm:text-lg
     box-border
-    p-4
     lg:p-8;
     font-family: 'Roboto', sans-serif;
   }
 
   .app_container {
-    @apply w-full
+    @apply sm:w-full
     h-full
     lg:max-w-screen-xl
     lg:max-h-[1024px]
@@ -45,8 +45,10 @@
     
     grid
     gap-16
-    p-16
-    pt-4
+    p-4
+    sm:p-16
+    sm:pt-0
+    pt-8
 
     overflow-auto
     z-50
