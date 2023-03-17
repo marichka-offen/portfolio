@@ -50,9 +50,9 @@
   .growing-skills-gallery {
     @apply flex
     flex-wrap
-    justify-between
-    sm:justify-start
-    overflow-hidden
+    justify-center
+    items-center
+    overflow-auto
     gap-8
     w-full;
   }

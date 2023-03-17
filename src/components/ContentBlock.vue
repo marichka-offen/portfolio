@@ -14,13 +14,16 @@
 <style>
   .content-block {
     @apply flex
-    flex-wrap
+    w-full
+    h-full
     flex-col
     gap-8;
   }
 
   .content-block__header {
     @apply text-4xl
+    w-full
+    h-min
     border-b-2
     border-zinc-500;
     font-family: 'Nothing You Could Do', cursive;
@@ -28,6 +31,8 @@
 
   .content-block__content {
     @apply flex
+    w-full
+    h-full
     flex-wrap
     flex-col
     gap-8;

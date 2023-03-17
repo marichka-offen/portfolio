@@ -36,7 +36,7 @@
     overflow-auto
     drop-shadow-2xl
     bg-white
-    p-8
+    p-16
     max-w-screen-xl
     flex
     flex-col
