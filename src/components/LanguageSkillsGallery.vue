@@ -13,6 +13,13 @@
       </SkillLogoWrapper>
       <p class="text-[#0284c7]">Ukrainian</p>
     </div>
+
+    <div class="language-skills-gallery__skill">
+      <SkillLogoWrapper color="#eab308">
+        <img :src="spanish" alt="Spanish" class="language-skills-gallery__image" />
+      </SkillLogoWrapper>
+      <p class="text-[#eab308]">Baby Spanish</p>
+    </div>
   </div>
 </template>
 
@@ -21,6 +28,7 @@
 
   import english from '@/assets/icons/english.svg'
   import ukrainian from '@/assets/icons/ukrainian.svg'
+  import spanish from '@/assets/icons/spanish.svg'
 </script>
 
 <style>
@@ -30,7 +38,7 @@
     justify-center
     items-center
     overflow-auto
-    gap-8
+    gap-16
     w-full;
   }
   .language-skills-gallery__skill {
