@@ -94,12 +94,16 @@
 <style>
   .side-scroll-nav {
     @apply flex
-    flex-col
+    flex-row
+    sm:flex-col
+
+
     justify-center
     items-center
-    gap-4
+    gap-2
+    sm:gap-4
     /* absolute to the app-container */
-    absolute
+    sm:fixed
     right-10
     top-1/3
     /* w-min

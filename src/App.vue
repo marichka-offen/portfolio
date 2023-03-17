@@ -25,7 +25,10 @@
     justify-center
     items-center
     bg-background
-    text-lg;
+    text-lg
+    box-border
+    p-4
+    lg:p-8;
     font-family: 'Roboto', sans-serif;
   }
 
@@ -34,13 +37,11 @@
     h-full
     lg:max-w-screen-xl
     lg:max-h-[1024px]
-    lg:m-8
 
     bg-white
     bg-opacity-80
     drop-shadow-2xl
-    rounded-none
-    lg:rounded-xl
+    rounded-xl
     
     grid
     gap-16
