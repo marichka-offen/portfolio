@@ -23,7 +23,10 @@
             please feel free to reach out to me!
           </p>
 
-          <button class="border p-2 bg-slate-100 rounded-md w-max" @click="goToSet(1)">
+          <button
+            class="border p-2 bg-slate-100 rounded-md w-max"
+            @click="router.push({ path: '/skills', query: { set: `skill-set-1` } })"
+          >
             Check out the skillset
           </button>
         </div>
@@ -60,29 +63,7 @@
       </TransitionGroup>
     </div>
 
-    <div class="skills-page__nav">
-      <vue-feather
-        type="arrow-up-circle"
-        size="48"
-        class="skills-page__arrow"
-        @click="moveUp"
-      ></vue-feather>
-
-      <div v-for="index in totalPages">
-        <div
-          @click="goToSet(index)"
-          class="skills-page__nav-dot"
-          :class="route.query.set === `skill-set-${index}` ? 'opacity-100' : 'opacity-25'"
-        ></div>
-      </div>
-
-      <vue-feather
-        type="arrow-down-circle"
-        size="48"
-        class="skills-page__arrow"
-        @click="moveDown"
-      ></vue-feather>
-    </div>
+    <SideScrollNav :totalPages="totalPages" @updateDirection="slideDirection = $event" />
   </div>
 </template>
 
@@ -94,45 +75,11 @@
   import GrowingSkillsGallery from '@/components/GrowingSkillsGallery.vue'
   import ContentBlock from '@/components/ContentBlock.vue'
   import LanguageSkillsGallery from '@/components/LanguageSkillsGallery.vue'
+  import SideScrollNav from '@/components/SideScrollNav.vue'
 
-  const current = ref(0)
   const totalPages = ref(2)
   const route = useRoute()
-
   const slideDirection = ref('slide-up')
-
-  const moveDown = () => {
-    slideDirection.value = 'slide-down'
-    current.value = current.value + 1
-
-    if (current.value > totalPages.value) {
-      current.value = 1
-    }
-
-    router.push({ path: '/skills', query: { set: `skill-set-${current.value}` } })
-  }
-
-  const moveUp = () => {
-    slideDirection.value = 'slide-up'
-    current.value = current.value - 1
-
-    if (current.value <= 0) {
-      current.value = totalPages.value
-    }
-
-    router.push({ path: '/skills', query: { set: `skill-set-${current.value}` } })
-  }
-
-  const goToSet = (index: number) => {
-    if (index < current.value) {
-      slideDirection.value = 'slide-up'
-    } else {
-      slideDirection.value = 'slide-down'
-    }
-
-    current.value = index
-    router.push({ path: '/skills', query: { set: `skill-set-${index}` } })
-  }
 </script>
 
 <style>
@@ -140,65 +87,21 @@
     @apply w-full
     h-full
     flex
-    justify-center
-    items-center
-    gap-4
-    min-h-full;
+    pr-16
+    /* items-center; */;
+  }
+
+  .skills-page__intro {
+    @apply flex
+    flex-col
+    gap-8;
   }
 
   .skills-page__skill-set {
     @apply w-full
     h-full
     flex
-    flex-col
-    gap-12
-    text-center
-    p-4;
-  }
-
-  .skills-page__intro {
-    @apply w-full
-    h-full
-    flex
-    flex-col
-    gap-8;
-  }
-
-  .skills-page__skills-container {
-    @apply /* h-full  */
-    mt-32
-    h-full
-    w-11/12
-    pr-8;
-  }
-
-  .skills-page__nav {
-    @apply flex
-    flex-col
-    justify-center
-    items-center
-    gap-4
-    w-min
-    -mt-32
-    -mr-10;
-  }
-
-  .skills-page__nav-dot {
-    @apply w-4
-    h-4
-    rounded-full
-    cursor-pointer
-    bg-e-cyan
-    transition-all
-    active:bg-e-magenta
-    active:opacity-100;
-  }
-
-  .skills-page__arrow {
-    @apply cursor-pointer
-    text-e-cyan
-    transition-all
-    active:text-e-magenta;
+    flex-col;
   }
 
   .slide-up-enter-active {
@@ -215,7 +118,7 @@
   }
 
   .slide-up-leave-to {
-    transform: translateY(100%);
+    transform: translateY(100px);
     opacity: 0;
   }
 

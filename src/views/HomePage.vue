@@ -34,9 +34,7 @@ import type ContentBlockVue from '@/components/ContentBlock.vue'
       </div>
     </div>
 
-    <div class="home-page__image-container">
-      <img src="@/assets/me.jpeg" alt="Marichka Offen" class="home-page__image" />
-    </div>
+    <img src="@/assets/me.jpeg" alt="Marichka Offen" class="home-page__image" />
   </div>
 </template>
 
@@ -46,48 +44,30 @@ import type ContentBlockVue from '@/components/ContentBlock.vue'
 
 <style>
   .home-page {
-    @apply flex
-    h-full
+    @apply h-full
+    flex
     flex-col
+    lg:flex-row
     gap-8
-    items-center
-    lg:justify-center
-    lg:h-4/5
-    lg:flex-row;
+    /* items-center; */;
   }
 
   .home-page__bio {
     @apply flex
     flex-col
-    w-full
-    justify-center
-    gap-8
-    order-2
-    basis-2/3
-    lg:order-1;
+    gap-8;
   }
 
   .home-page__links {
-    @apply flex
+    @apply flex 
     gap-4
     flex-wrap;
   }
 
-  .home-page__image-container {
-    @apply flex
-    justify-center
-    items-center
-    max-w-xs
-    max-h-80
-    /* w-96
-    h-96 */
-    order-1
-    lg:order-2;
-  }
-
   .home-page__image {
-    @apply w-full
-    h-full
+    @apply max-w-xs
+    max-h-80
+    flex-none
     object-cover
     rounded-full;
   }

@@ -32,21 +32,25 @@
   .app_container {
     @apply w-full
     h-full
-    rounded-none
-    overflow-auto
-    drop-shadow-2xl
+    lg:max-w-screen-xl
+    lg:max-h-[1024px]
+    lg:m-8
+
     bg-white
-    p-16
-    max-w-screen-xl
-    flex
-    flex-col
-    /* gap-12 */
     bg-opacity-80
-    lg:bg-opacity-90
-    lg:w-4/5
-    lg:h-4/5
-    lg:rounded-xl;
-    z-index: 999;
+    drop-shadow-2xl
+    rounded-none
+    lg:rounded-xl
+    
+    grid
+    gap-16
+    p-16
+    pt-4
+
+    overflow-auto
+    z-50
+    relative;
+    grid-template-rows: 80px 1fr;
   }
 
   .fade-enter-from,

@@ -16,6 +16,7 @@
   .website-header {
     @apply w-full
     flex
+    items-end
     justify-between
     h-20;
   }
