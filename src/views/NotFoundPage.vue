@@ -17,7 +17,9 @@
       h-full
       w-full
       -mt-20
-      text-transparent;
+      text-transparent
+      leading-8
+      text-center;
   }
 
   .not-found-page__glitch {
