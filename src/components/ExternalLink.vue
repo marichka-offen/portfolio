@@ -1,5 +1,5 @@
 <template>
-  <div class="external-link">
+  <div class="external-link" :class="glitchEffect ? 'external-link--glitched' : ''">
     <a :href="link" target="_blank" class="external-link__link">{{ text }}</a>
     <vue-feather type="external-link" size="16"></vue-feather>
   </div>
@@ -11,6 +11,7 @@
   defineProps<{
     link: string
     text: string
+    glitchEffect?: boolean
   }>()
 
   const randomTime = computed(() => {
@@ -26,10 +27,10 @@
       gap-1;
   }
 
-  .external-link {
-    font-weight: 300;
-    font-size: 18px;
-    position: relative;
+  .external-link--glitched {
+    @apply relative
+    text-2xl
+    font-light;
     text-shadow: 2px 0 0 #4dd0e1, -0.5px -1.5px 0 #ec407a, 0.5px 1.5px 0 #fef08a;
     animation: glitch 0.5s infinite;
     animation-delay: v-bind(randomTime);

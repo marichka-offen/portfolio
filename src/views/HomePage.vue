@@ -24,10 +24,12 @@ import type ContentBlockVue from '@/components/ContentBlock.vue'
         <ExternalLink
           link="https://docs.google.com/document/d/1T_DrCQ7RGrIx-BiOEjts1FdxFxDqu9Aa/edit?usp=sharing&ouid=104315682638605713996&rtpof=true&sd=true"
           text="Resume"
+          glitchEffect
         />
         <ExternalLink
           link="https://www.linkedin.com/in/marichka-offen/details/recommendations/"
           text="Testimonials"
+          glitchEffect
         />
       </div>
     </div>
@@ -48,7 +50,8 @@ import type ContentBlockVue from '@/components/ContentBlock.vue'
     h-full
     flex-col
     gap-8
-    items-center
+    items-start
+    lg:justify-center
     lg:h-4/5
     lg:flex-row;
   }
@@ -60,7 +63,7 @@ import type ContentBlockVue from '@/components/ContentBlock.vue'
     justify-center
     gap-8
     order-2
-    basis-1/2
+    basis-2/3
     lg:order-1;
   }
 

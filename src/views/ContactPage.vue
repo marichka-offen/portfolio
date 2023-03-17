@@ -1,6 +1,3 @@
-<!-- <template>
-  <div>THIS IS FUCKING CONFUSING</div>
-</template> -->
 <template>
   <ContentBlock>
     <template #header> Contact </template>
@@ -12,9 +9,17 @@
       forward to hearing from you!
 
       <div class="contact__external-links">
-        <ExternalLink link="mailto: marichka.offen@gmail.com" text="marichka.offen@gmail.com" />
-        <ExternalLink link="https://github.com/marichka-offen" text="GitHub" />
-        <ExternalLink link="https://www.linkedin.com/in/marichka-offen/" text="LinkedIn" />
+        <ExternalLink
+          link="mailto: marichka.offen@gmail.com"
+          text="marichka.offen@gmail.com"
+          glitchEffect
+        />
+        <ExternalLink link="https://github.com/marichka-offen" text="GitHub" glitchEffect />
+        <ExternalLink
+          link="https://www.linkedin.com/in/marichka-offen/"
+          text="LinkedIn"
+          glitchEffect
+        />
       </div>
     </template>
   </ContentBlock>
