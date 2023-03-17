@@ -2,34 +2,37 @@
   <div class="skills-page">
     <div class="skills-page__skills-container">
       <TransitionGroup :name="slideDirection">
-        <div v-if="!route.query.set" class="skills-page__intro">
-          <p>
-            Welcome to my portfolio skills page! As a developer, I have experience in a variety of
-            programming languages and web technologies. I specialize in front-end development,
-            including HTML, CSS, and JavaScript. These languages form the foundation of most modern
-            websites and applications, and I've honed my skills in each one to build beautiful and
-            user-friendly interfaces.
-          </p>
+        <ContentBlock v-if="!route.query.set">
+          <template #header> Ta-da! </template>
+          <template #default>
+            <p>
+              Welcome to my portfolio skills page! As a developer, I have experience in a variety of
+              programming languages and web technologies. I specialize in front-end development,
+              including HTML, CSS, and JavaScript. These languages form the foundation of most
+              modern websites and applications, and I've honed my skills in each one to build
+              beautiful and user-friendly interfaces.
+            </p>
 
-          <p>
-            In addition to front-end development, I also have experience in back-end technologies
-            such as Node.js, as well as frameworks like Vue.js and React. With these tools, I've
-            built full-stack applications that are secure, scalable, and easy to maintain.
-          </p>
+            <p>
+              In addition to front-end development, I also have experience in back-end technologies
+              such as Node.js, as well as frameworks like Vue.js and React. With these tools, I've
+              built full-stack applications that are secure, scalable, and easy to maintain.
+            </p>
 
-          <p>
-            I'm always eager to learn new skills and technologies, and I'm always looking for new
-            opportunities to grow as a developer. If you have a project that you'd like to discuss,
-            please feel free to reach out to me!
-          </p>
+            <p>
+              I'm always eager to learn new skills and technologies, and I'm always looking for new
+              opportunities to grow as a developer. If you have a project that you'd like to
+              discuss, please feel free to reach out to me!
+            </p>
+            <button
+              class="border p-2 bg-slate-100 rounded-md w-max"
+              @click="router.push({ path: '/skills', query: { set: `skill-set-1` } })"
+            >
+              Check out the skillset
+            </button>
+          </template>
+        </ContentBlock>
 
-          <button
-            class="border p-2 bg-slate-100 rounded-md w-max"
-            @click="router.push({ path: '/skills', query: { set: `skill-set-1` } })"
-          >
-            Check out the skillset
-          </button>
-        </div>
         <div class="skills-page__skill-set" v-if="route.query.set === 'skill-set-1'">
           <ContentBlock>
             <template #header> Skills </template>
@@ -87,8 +90,7 @@
     @apply w-full
     h-full
     flex
-    pr-16
-    /* items-center; */;
+    pr-16;
   }
 
   .skills-page__intro {
@@ -101,7 +103,8 @@
     @apply w-full
     h-full
     flex
-    flex-col;
+    flex-col
+    gap-8;
   }
 
   .slide-up-enter-active {
