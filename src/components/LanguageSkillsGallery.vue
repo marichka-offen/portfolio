@@ -50,9 +50,11 @@
   }
 
   .language-skills-gallery__image {
-    @apply rounded-xl
-    h-12
-    w-16
+    @apply rounded-full
+    h-8
+    w-8
+    sm:h-16
+    sm:w-16
     p-1
     object-cover;
   }
