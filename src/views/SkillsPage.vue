@@ -6,30 +6,31 @@
           <template #header> Skills that pay the bills! </template>
           <template #default>
             <p>
-              Welcome to my portfolio skills page! As a developer, I have experience in a variety of
+              Welcome to my portfolio skills page! As a developer, I'm a master of a variety of
               programming languages and web technologies. I specialize in front-end development,
               including HTML, CSS, and JavaScript. These languages form the foundation of most
               modern websites and applications, and I've honed my skills in each one to build
-              beautiful and user-friendly interfaces.
+              interfaces so slick, they make a penguin jealous.
             </p>
 
             <p>
-              In addition to front-end development, I also have experience in back-end technologies
-              such as Node.js, as well as frameworks like Vue.js and React. With these tools, I've
-              built full-stack applications that are secure, scalable, and easy to maintain.
+              But wait, there's more! I'm also skilled in back-end technologies like Node.js, and
+              I've built full-stack applications that are so secure, even your grandma can use them
+              without fear. I can also work some magic with frameworks like Vue.js and React, making
+              your website or app feel like it's been blessed by a unicorn.
             </p>
 
             <p>
-              I'm always eager to learn new skills and technologies, and I'm always looking for new
-              opportunities to grow as a developer. If you have a project that you'd like to
-              discuss, please feel free to reach out to me!
+              If you have a project that you'd like to discuss, please feel free to reach out to me!
+              I promise I won't make you drink the same caffeinated potions I do to stay up all
+              night coding.
             </p>
-            <button
+            <!-- <button
               class="border p-2 bg-slate-100 rounded-md w-max"
               @click="router.push({ path: '/skills', query: { set: `skills-set-1` } })"
             >
               Check out the skillset
-            </button>
+            </button> -->
           </template>
         </ContentBlock>
 
@@ -37,17 +38,12 @@
           <ContentBlock>
             <template #header> Skills </template>
             <template #default>
-              These are the skills that I have acquired through practical experience gained in
-              professional settings, as well as through self-directed study driven by personal
-              interest.
+              These are the skills that I've picked up along my journey as a web developer. Some of
+              them I've acquired through intense battles with bugs and coding conundrums in
+              professional settings, while others I've learned through the wizardry of self-directed
+              study. But rest assured, they all come with a seal of approval from my trusted friend
+              and ally, experience.
               <SkillsGallery />
-            </template>
-          </ContentBlock>
-
-          <ContentBlock>
-            <template #header> Languages </template>
-            <template #default>
-              <LanguageSkillsGallery />
             </template>
           </ContentBlock>
         </div>
@@ -56,10 +52,25 @@
           <ContentBlock>
             <template #header> Growing Skills </template>
             <template #default>
-              These are the skills I'm currently focused on mastering, and I'm continually seeking
-              out recommended courses to help me do so. Feel free to browse the links to these
-              courses, as I highly recommend them to anyone seeking to improve in these areas.
+              Here are the skills I'm working hard to master at the moment. I'm always on the
+              lookout for the latest and greatest courses to help me level up, so if you have any
+              recommendations, hit me up! And if you're looking to improve your skills in these
+              areas too, check out the links to some of my favorite courses below. Trust me, they're
+              outstanding!
               <GrowingSkillsGallery />
+            </template>
+          </ContentBlock>
+        </div>
+
+        <div class="skills-page__skill-set" v-if="route.query.set === 'skills-set-3'">
+          <ContentBlock>
+            <template #header> Languages </template>
+            <template #default>
+              Welcome to the Linguistic Laboratory! This is where you can find a breakdown of the
+              languages I'm fluent in, as well as the one I'm currently trying to wrap my tongue
+              around. From English to Ukrainian, I've got you covered. And if you have any language
+              puns, please don't hesitate to share - I'm always down for a good play on words!
+              <LanguageSkillsGallery />
             </template>
           </ContentBlock>
         </div>
@@ -84,7 +95,7 @@
   import LanguageSkillsGallery from '@/components/LanguageSkillsGallery.vue'
   import SideScrollNav from '@/components/SideScrollNav.vue'
 
-  const totalPages = ref(2)
+  const totalPages = ref(3)
   const route = useRoute()
   const slideDirection = ref('slide-up')
 </script>

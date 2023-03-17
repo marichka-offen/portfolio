@@ -5,21 +5,21 @@
       <div class="home-page__container">
         <div class="home-page__bio">
           <p>
-            Hello, I'm Marichka, a US-based front-end developer and programming enthusiast. As a
-            self-taught web developer, I've dedicated countless hours to learning and mastering
-            HTML, CSS, and JavaScript, and I've honed my skills through a combination of passion,
-            personal growth, and hard work.
+            Hi there, I'm Marichka! I'm a front-end developer and programming addict based in the
+            US. I've spent more hours than I'd care to admit tinkering with HTML, CSS, and
+            JavaScript to become the master web-wizard that I am today.
           </p>
           <p>
-            I take pride in creating beautiful, intuitive, and responsive user interfaces for
-            websites and applications. As a team player and aspiring mentor, I enjoy collaborating
-            with others and sharing my knowledge through walkthroughs and Q&A sessions.
+            I'm all about creating beautiful, seamless, and responsive user interfaces that will
+            make you go "wow" (and maybe even shed a tear of joy). As a team player and aspiring
+            mentor, I love working with others and showing off my knowledge through fun and engaging
+            walkthroughs and Q&A sessions.
           </p>
-
           <p>
-            In addition to my development work, I am also a dedicated lifelong learner. I believe
-            that continuous education is essential for staying ahead of the curve in the
-            ever-evolving world of technology. If you have something to teach me, I'm all ears!
+            When I'm not coding up a storm, I'm probably buried nose-deep in the latest tech books,
+            trying to absorb all the knowledge the universe has to offer. I'm a lifelong learner,
+            and I'm always looking to expand my horizons. So, if you've got something to teach me
+            (or even just want to chat about the latest tech trends), I'm all ears!
           </p>
           <div class="home-page__links">
             <ExternalLink
