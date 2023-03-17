@@ -1,5 +1,11 @@
 <template>
   <div class="skills-page">
+    <SideScrollNav
+      :totalPages="totalPages"
+      routeString="skills"
+      @updateDirection="slideDirection = $event"
+    />
+
     <div class="skills-page__skills-container">
       <TransitionGroup :name="slideDirection">
         <ContentBlock v-if="!route.query.set">
@@ -25,12 +31,6 @@
               I promise I won't make you drink the same caffeinated potions I do to stay up all
               night coding.
             </p>
-            <!-- <button
-              class="border p-2 bg-slate-100 rounded-md w-max"
-              @click="router.push({ path: '/skills', query: { set: `skills-set-1` } })"
-            >
-              Check out the skillset
-            </button> -->
           </template>
         </ContentBlock>
 
@@ -76,17 +76,10 @@
         </div>
       </TransitionGroup>
     </div>
-
-    <SideScrollNav
-      :totalPages="totalPages"
-      routeString="skills"
-      @updateDirection="slideDirection = $event"
-    />
   </div>
 </template>
 
 <script setup lang="ts">
-  import router from '@/router'
   import { useRoute } from 'vue-router'
   import { ref } from 'vue'
   import SkillsGallery from '@/components/SkillsGallery.vue'
@@ -105,7 +98,10 @@
     @apply w-full
     h-full
     flex
-    pr-16;
+    flex-col
+    gap-8
+    sm:flex-row
+    sm:pr-16;
   }
 
   .skills-page__intro {

@@ -1,5 +1,11 @@
 <template>
   <div class="work-page">
+    <SideScrollNav
+      :totalPages="totalPages"
+      @updateDirection="slideDirection = $event"
+      routeString="work"
+    />
+
     <div class="work-page__container">
       <TransitionGroup :name="slideDirection">
         <ContentBlock v-if="!route.query.set">
@@ -412,12 +418,6 @@
         </ProjectBlock>
       </TransitionGroup>
     </div>
-
-    <SideScrollNav
-      :totalPages="totalPages"
-      @updateDirection="slideDirection = $event"
-      routeString="work"
-    />
   </div>
 </template>
 
@@ -453,7 +453,10 @@
     @apply w-full
     h-full
     flex
-    pr-16;
+    flex-col
+    gap-8
+    sm:flex-row
+    sm:pr-16;
   }
 
   .slide-up-enter-active {
