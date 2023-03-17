@@ -44,12 +44,13 @@ import type ContentBlockVue from '@/components/ContentBlock.vue'
 
 <style>
   .home-page {
-    @apply h-full
+    @apply h-max
     flex
     flex-col
     lg:flex-row
     gap-8
-    /* items-center; */;
+    items-center
+    lg:items-start;
   }
 
   .home-page__bio {
@@ -69,6 +70,7 @@ import type ContentBlockVue from '@/components/ContentBlock.vue'
     max-h-80
     flex-none
     object-cover
-    rounded-full;
+    rounded-full
+    self-center;
   }
 </style>
