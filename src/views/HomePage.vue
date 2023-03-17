@@ -48,7 +48,6 @@ import type ContentBlockVue from '@/components/ContentBlock.vue'
     h-full
     flex-col
     gap-8
-    justify-center
     items-center
     lg:h-4/5
     lg:flex-row;

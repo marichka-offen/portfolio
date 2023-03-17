@@ -53,6 +53,6 @@
   }
 
   .nav-bar__link:active {
-    background-image: linear-gradient(transparent calc(65% - 5px), #ffff00 3px);
+    background-image: linear-gradient(transparent calc(65% - 5px), #fef08a 3px);
   }
 </style>

@@ -24,7 +24,8 @@
     flex
     justify-center
     items-center
-    bg-background;
+    bg-background
+    text-xl;
     font-family: 'Roboto', sans-serif;
   }
 
@@ -40,7 +41,7 @@
     flex
     flex-col
     gap-12
-    bg-opacity-60
+    bg-opacity-80
     lg:bg-opacity-90
     lg:w-4/5
     lg:h-4/5

@@ -26,18 +26,22 @@
     --skill-logo-wrapper-distance: 50%;
   }
   .skill-logo-wrapper {
-    @apply h-16
-    w-16
-    rounded-xl
+    @apply h-10
+    w-10
+    rounded-full
     flex
     items-center
     justify-center
-    dark:bg-[#586F7C];
-    background-color: v-bind(backgroundColor);
+    dark:bg-[#586F7C]
+    border-2
+    sm:w-20
+    sm:h-20;
+    border-color: v-bind(backgroundColor);
   }
 
   .skill-logo-wrapper__image {
-    @apply p-4 
-    object-contain;
+    @apply p-2 
+    object-contain
+    sm:p-4;
   }
 </style>

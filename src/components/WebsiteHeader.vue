@@ -16,7 +16,8 @@
   .website-header {
     @apply w-full
     flex
-    justify-between;
+    justify-between
+    h-20;
   }
 
   .website-header__title {
@@ -24,7 +25,6 @@
     relative;
     font-family: 'Nothing You Could Do', cursive;
     line-height: 0.6;
-    text-shadow: 3px 3px 0px rgba(77, 208, 225, 1), 10px 10px 0px rgba(233, 30, 98, 1),
-      13px 15px 0px rgba(255, 255, 0, 1);
+    text-shadow: 3px 3px 0px #4dd0e1, 10px 10px 0px #ec407a, 13px 15px 0px #ffff00;
   }
 </style>
