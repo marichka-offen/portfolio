@@ -30,6 +30,6 @@
     relative;
     font-family: 'Nothing You Could Do', cursive;
     line-height: 0.6;
-    text-shadow: 3px 3px 0px #4dd0e1, 10px 10px 0px #ec407a, 13px 15px 0px #ffff00;
+    text-shadow: 3px 3px 0px #4dd0e1, 10px 10px 0px #fc00ff, 13px 15px 0px #ffff00;
   }
 </style>

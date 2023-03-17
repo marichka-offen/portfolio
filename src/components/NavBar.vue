@@ -43,7 +43,7 @@
     @apply flex
     lowercase
     bg-no-repeat;
-    background-image: linear-gradient(transparent calc(65% - 5px), #ec407a 3px);
+    background-image: linear-gradient(transparent calc(65% - 5px), #fc00ff 3px);
     background-size: 0;
     transition: 0.2s ease-out;
   }
