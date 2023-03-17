@@ -1,8 +1,6 @@
-import type ContentBlockVue from '@/components/ContentBlock.vue'
-
 <template>
   <ContentBlock>
-    <template #header> Salutations! </template>
+    <template #header> Salutations! Glad you could make it</template>
     <template #default>
       <div class="home-page__container">
         <div class="home-page__bio">
