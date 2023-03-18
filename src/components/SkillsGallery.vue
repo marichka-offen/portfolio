@@ -41,13 +41,23 @@
     </div>
 
     <div class="skills-gallery__skill">
+      <SkillLogoWrapper :image="nodejs" color="#6CC04A" />
+      <p class="text-[#6CC04A]">Node</p>
+    </div>
+
+    <div class="skills-gallery__skill">
       <SkillLogoWrapper :image="react" color="#61DAFB" />
       <p class="text-[#61DAFB]">React</p>
     </div>
 
     <div class="skills-gallery__skill">
-      <SkillLogoWrapper :image="nodejs" color="#6CC04A" />
-      <p class="text-[#6CC04A]">Node</p>
+      <SkillLogoWrapper :image="redux" color="#764ABC" />
+      <p class="text-[#764ABC]">Redux</p>
+    </div>
+
+    <div class="skills-gallery__skill">
+      <SkillLogoWrapper :image="firebase" color="#F57F17" />
+      <p class="text-[#F57F17]">Firebase</p>
     </div>
 
     <div class="skills-gallery__skill">
@@ -84,22 +94,25 @@
 
 <script setup lang="ts">
   import SkillLogoWrapper from '@/components/SkillLogoWrapper.vue'
+
+  import accessibility from '@/assets/icons/accessibility.svg'
+  import csharp from '@/assets/icons/csharp.svg'
   import css from '@/assets/icons/css.svg'
   import d3 from '@/assets/icons/d3.svg'
+  import dotnet from '@/assets/icons/dotnet.svg'
+  import firebase from '@/assets/icons/firebase.svg'
+  import git from '@/assets/icons/git.svg'
   import html from '@/assets/icons/html.svg'
   import javascript from '@/assets/icons/javascript.svg'
+  import mysql from '@/assets/icons/mysql.svg'
   import nodejs from '@/assets/icons/nodejs.svg'
+  import nuxt from '@/assets/icons/nuxt.svg'
   import react from '@/assets/icons/react.svg'
+  import redux from '@/assets/icons/redux.svg'
   import sass from '@/assets/icons/sass.svg'
+  import tailwind from '@/assets/icons/tailwind.svg'
   import typescript from '@/assets/icons/typescript.svg'
   import vuejs from '@/assets/icons/vuejs.svg'
-  import git from '@/assets/icons/git.svg'
-  import nuxt from '@/assets/icons/nuxt.svg'
-  import tailwind from '@/assets/icons/tailwind.svg'
-  import accessibility from '@/assets/icons/accessibility.svg'
-  import dotnet from '@/assets/icons/dotnet.svg'
-  import csharp from '@/assets/icons/csharp.svg'
-  import mysql from '@/assets/icons/mysql.svg'
 </script>
 
 <style>

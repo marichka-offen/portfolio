@@ -208,8 +208,57 @@
           </template>
         </ProjectBlock>
 
-        <!-- History Reconsidered -->
+        <!-- React e-commerce test website -->
         <ProjectBlock v-if="route.query.set === 'work-set-4'">
+          <template #header> React e-commerce test website </template>
+          <template #content>
+            <p>
+              For my capstone project during the immersive React course, I built a fully functional
+              e-commerce website using React and Redux. While the idea for the project was provided
+              by the course, I was responsible for implementing it and making it my own.
+            </p>
+
+            <p>
+              I leveraged my experience with React, which I've been familiar with for over 5 years
+              since studying it in school, as well as my understanding of Redux, to create a website
+              that is both user-friendly and efficient. Additionally, I utilized the Tailwind CSS
+              framework to create a beautiful and responsive design, while also employing Firebase
+              for data management and user authentication.
+            </p>
+
+            <p>
+              To further improve my skills and explore different approaches to the project, I built
+              several versions using React Context, Context with Reducers, and Redux that are
+              available on corresponding branches on GitHub. Through this process, I gained a deeper
+              understanding of how these tools work together to create complex applications, and I
+              feel confident in my ability to apply this knowledge to future projects.
+            </p>
+          </template>
+
+          <template #tools>
+            <SkillLogoWrapper :image="html" color="#ef652a" />
+            <SkillLogoWrapper :image="css" color="#33A9DC" />
+            <SkillLogoWrapper :image="tailwind" color="#07B6D5" />
+            <SkillLogoWrapper :image="react" color="#61DAFB" />
+            <SkillLogoWrapper :image="redux" color="#764ABC" />
+            <SkillLogoWrapper :image="firebase" color="#F57F17" />
+            <SkillLogoWrapper :image="git" color="#DE4C36" />
+          </template>
+
+          <template #links>
+            <ExternalLink
+              link="https://e-commerce-website-deep-dive-learning.netlify.app/"
+              text="Website"
+            />
+            <ExternalLink
+              link="https://github.com/marichka-offen/e-commerce-website"
+              text="GitHub"
+            />
+          </template>
+        </ProjectBlock>
+
+        <!-- History Reconsidered -->
+        <ProjectBlock v-if="route.query.set === 'work-set-5'">
           <template #header> History Reconsidered </template>
           <template #content>
             <p>
@@ -244,7 +293,7 @@
         </ProjectBlock>
 
         <!-- Let's Hang -->
-        <ProjectBlock v-if="route.query.set === 'work-set-5'">
+        <ProjectBlock v-if="route.query.set === 'work-set-6'">
           <template #header> Let's Hang </template>
           <template #content>
             <p>
@@ -282,7 +331,7 @@
         </ProjectBlock>
 
         <!-- Pig Game -->
-        <ProjectBlock v-if="route.query.set === 'work-set-6'">
+        <ProjectBlock v-if="route.query.set === 'work-set-7'">
           <template #header> Pig Game </template>
           <template #content>
             <p>
@@ -321,7 +370,7 @@
         </ProjectBlock>
 
         <!-- Natours | Trillo | Nexter -->
-        <ProjectBlock v-if="route.query.set === 'work-set-7'">
+        <ProjectBlock v-if="route.query.set === 'work-set-8'">
           <template #header> Natours | Trillo | Nexter</template>
           <template #content>
             <p>
@@ -378,7 +427,7 @@
         </ProjectBlock>
 
         <!-- Portfolio -->
-        <ProjectBlock v-if="route.query.set === 'work-set-8'">
+        <ProjectBlock v-if="route.query.set === 'work-set-9'">
           <template #header> Portfolio </template>
           <template #content>
             <p>
@@ -443,8 +492,10 @@
   import dotnet from '@/assets/icons/dotnet.svg'
   import csharp from '@/assets/icons/csharp.svg'
   import mysql from '@/assets/icons/mysql.svg'
+  import redux from '@/assets/icons/redux.svg'
+  import firebase from '@/assets/icons/firebase.svg'
 
-  const totalPages = ref(8)
+  const totalPages = ref(9)
   const route = useRoute()
   const slideDirection = ref('slide-up')
 </script>
