@@ -228,7 +228,7 @@
 
             <p>
               To further improve my skills and explore different approaches to the project, I built
-              several versions using React Context, Context with Reducers, and Redux that are
+              several versions using React Context, Context with Reducers, and Redux, as well as implemented payments with Stripe that are
               available on corresponding branches on GitHub. Through this process, I gained a deeper
               understanding of how these tools work together to create complex applications, and I
               feel confident in my ability to apply this knowledge to future projects.
